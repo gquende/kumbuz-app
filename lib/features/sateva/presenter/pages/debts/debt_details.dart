@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iconify_flutter/iconify_flutter.dart';
 import 'package:iconify_flutter/icons/game_icons.dart';
-import 'package:kumbuz/app.dart';
 import 'package:kumbuz/core/di/dependecy_injection.dart';
 import 'package:kumbuz/features/sateva/data/models/debt.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/debts/controller/debt_controller_2.dart';

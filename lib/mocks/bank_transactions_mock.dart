@@ -3,7 +3,6 @@ import 'package:kumbuz/features/sateva/domain/entities/bank_transaction.dart';
 import 'package:uuid/uuid.dart';
 
 import '../core/utils/datetime_manipulation.dart';
-import '../features/sateva/data/models/wallet_transaction.dart';
 
 // var bankTransactionMock = [
 //   WalletTransaction(

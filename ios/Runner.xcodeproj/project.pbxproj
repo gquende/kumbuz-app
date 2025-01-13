@@ -185,7 +185,6 @@
 				F05BF33ADE475BC956055B38 /* Pods-RunnerTests.profile-prod.xcconfig */,
 				83DFF726E220E43E569532F5 /* Pods-RunnerTests.profile-dev.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -525,7 +524,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gquende.kumbuz.dev;
-				PRODUCT_NAME = "$(TARGET_NAME) Dev";
+				PRODUCT_NAME = "Kumbuz Dev";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -619,7 +618,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gquende.kumbuz.dev;
-				PRODUCT_NAME = "$(TARGET_NAME) Dev";
+				PRODUCT_NAME = "Kumbuz Dev";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -708,7 +707,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gquende.kumbuz.dev;
-				PRODUCT_NAME = "$(TARGET_NAME) Dev";
+				PRODUCT_NAME = "Kumbuz Dev";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";

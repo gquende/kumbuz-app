@@ -1,9 +1,5 @@
-import 'dart:math';
-
 import 'package:flutter_test/flutter_test.dart';
-
 import 'package:kumbuz/core/db/database.dart';
-
 import 'package:kumbuz/features/sateva/data/models/income.dart';
 
 main() {

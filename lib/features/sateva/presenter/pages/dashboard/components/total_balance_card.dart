@@ -1,15 +1,9 @@
-import 'package:dropdown_model_list/drop_down/model.dart';
-import 'package:dropdown_model_list/drop_down/select_drop_list.dart';
 import 'package:flutter/material.dart';
-import 'package:kumbuz/configs/theme/styles.dart';
-import 'package:kumbuz/features/sateva/presenter/pages/base/json/day_month.dart';
 import 'package:kumbuz/mocks/month_mocks.dart';
 import 'package:provider/provider.dart';
 
-import '../../../../../../core/singletons/globals.dart';
 import '../../../../../../core/utils/currency_utils.dart';
 import '../../../../../../core/utils/datetime_manipulation.dart';
-import '../../../../domain/entities/category.dart';
 import '../../../../domain/usecases/controllers/expense_controlller.dart';
 import '../../../../domain/usecases/controllers/wallet_ controller.dart';
 import '../../income/controller/income_controller.dart';

@@ -1,5 +1,5 @@
-import 'package:flutter/services.dart';
-
+import 'package:contained_tab_bar_view/contained_tab_bar_view.dart';
+import 'package:flutter/material.dart';
 import 'package:kumbuz/features/sateva/data/models/budget.dart';
 import 'package:kumbuz/features/sateva/domain/usecases/controllers/budget_controller.dart';
 import 'package:kumbuz/features/sateva/domain/usecases/controllers/wallet_%20controller.dart';
@@ -7,17 +7,13 @@ import 'package:kumbuz/features/sateva/domain/usecases/debts_usecases.dart';
 import 'package:kumbuz/features/sateva/domain/usecases/goals_usecases.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/debts/controller/debt_controller_2.dart';
 import 'package:kumbuz/features/sateva/presenter/widget/budget_card.dart';
-
 import 'package:provider/provider.dart';
+
 // import 'c';
 import '../../../../data/models/debt.dart';
 import '../../../widget/debt_card.dart';
 import '../../income/controller/income_controller.dart';
 import '../../savings/savings_page.dart';
-import '../json/budget_json.dart';
-import '../json/day_month.dart';
-import 'package:contained_tab_bar_view/contained_tab_bar_view.dart';
-import 'package:flutter/material.dart';
 //import 'package:flutter_icons/flutter_icons.dart';
 
 class BudgetPage extends StatefulWidget {

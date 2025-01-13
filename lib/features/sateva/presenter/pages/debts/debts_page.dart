@@ -3,22 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:iconify_flutter/iconify_flutter.dart';
 import 'package:iconify_flutter/icons/game_icons.dart';
 import 'package:kumbuz/features/sateva/data/models/debt.dart';
-import 'package:kumbuz/features/sateva/domain/usecases/debts_usecases.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/debts/add_debt.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/debts/controller/debt_controller_2.dart';
-import 'package:kumbuz/features/sateva/presenter/widget/debt_card.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 import 'package:provider/provider.dart';
 
 import '../../../../../configs/theme/styles.dart';
-import '../../../../../core/di/dependecy_injection.dart';
 import '../../../../../core/utils/currency_utils.dart';
-import '../../../../../core/utils/datetime_manipulation.dart';
-import '../../../domain/usecases/controllers/wallet_ controller.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-
-import '../../../domain/usecases/expense_usecase/add_expense_usecase.dart';
-import '../../../domain/usecases/transactions_usecase/get_sum_transaction_by_type.dart';
 import 'debt_details.dart';
 
 class DebtsPage extends StatefulWidget {

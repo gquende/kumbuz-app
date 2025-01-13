@@ -1,26 +1,12 @@
-import 'package:date_format/date_format.dart';
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
 import 'package:kumbuz/configs/config.dart';
-import 'package:kumbuz/configs/theme/styles.dart';
-import 'package:kumbuz/core/singletons/globals.dart';
-
-import 'package:kumbuz/features/sateva/data/models/budget.dart';
-import 'package:kumbuz/features/sateva/data/models/category_model.dart';
-import 'package:kumbuz/features/sateva/data/models/debt.dart';
-import 'package:kumbuz/features/sateva/data/models/goals.dart';
-import 'package:kumbuz/features/sateva/domain/usecases/controllers/budget_controller.dart';
-
 import 'package:kumbuz/core/utils/datetime_manipulation.dart';
-import 'package:kumbuz/features/sateva/domain/usecases/debts_usecases.dart';
-import 'package:kumbuz/features/sateva/domain/usecases/goals_usecases.dart';
+import 'package:kumbuz/features/sateva/data/models/debt.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/debts/controller/debt_controller_2.dart';
 import 'package:provider/provider.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../../../app.dart';
-import '../../../../../main.dart';
-import '../../../domain/entities/category.dart';
 
 class AddDebt extends StatefulWidget {
   @override
