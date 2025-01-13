@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/transactions/controller/transaction_controller.dart';
 import 'package:kumbuz/l10n/l10n.dart';
@@ -21,8 +22,6 @@ import 'features/sateva/domain/usecases/debts_usecases.dart';
 import 'features/sateva/domain/usecases/goals_usecases.dart';
 import 'features/sateva/domain/usecases/notification_usecases/insert_notification_usecase.dart';
 import 'features/sateva/presenter/pages/base/start_view.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-
 import 'features/sateva/presenter/pages/debts/controller/debt_controller_2.dart';
 import 'features/sateva/presenter/pages/income/controller/income_controller.dart';
 

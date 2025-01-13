@@ -13,7 +13,7 @@ analyzer:
     - "**/*.g.dart"
   errors:
     avoid_print: error
-    #unused_import: error
+    unused_import: error
 
 linter:
 

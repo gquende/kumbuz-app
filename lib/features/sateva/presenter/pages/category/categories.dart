@@ -4,10 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:kumbuz/features/sateva/data/models/category_model.dart';
 import 'package:kumbuz/features/sateva/domain/entities/category.dart';
-import 'package:kumbuz/features/sateva/domain/usecases/category_usecases.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/category/controllers/category_controller.dart';
-import 'package:kumbuz/main.dart';
-import 'package:provider/provider.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../../../app.dart';
