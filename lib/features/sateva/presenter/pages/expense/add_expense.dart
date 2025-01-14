@@ -1,22 +1,20 @@
-import 'package:flutter/material.dart';
 import 'package:date_format/date_format.dart';
-import 'package:get/get.dart';
-import 'package:lottie/lottie.dart';
+import 'package:flutter/material.dart';
 import 'package:kumbuz/configs/config.dart';
 import 'package:kumbuz/features/sateva/data/models/expense.dart';
 import 'package:kumbuz/features/sateva/domain/entities/transaction_entity.dart';
 import 'package:kumbuz/features/sateva/domain/usecases/controllers/expense_controlller.dart';
 import 'package:kumbuz/features/sateva/domain/usecases/controllers/wallet_%20controller.dart';
-
 import 'package:provider/provider.dart';
+
 import '../../../../../app.dart';
 import '../../../../../core/singletons/globals.dart';
-import '../../../../../main.dart';
 import '../../../domain/entities/category.dart';
 
 class AddExpense extends StatefulWidget {
   Expense? expense;
   TransactionEntity? transaction;
+
   AddExpense({super.key, this.expense, this.transaction});
 
   @override

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kumbuz/core/di/dependecy_injection.dart';
 import 'package:kumbuz/features/sateva/domain/entities/kixikila/kixikila.dart';
-import 'package:kumbuz/features/sateva/domain/entities/kixikila/kixikila_payment.dart';
 import 'package:kumbuz/features/sateva/domain/usecases/kixikila_usecases/payments/get_all_usecase.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/kixikila/payments/components/kixi_payment_component.dart';
 

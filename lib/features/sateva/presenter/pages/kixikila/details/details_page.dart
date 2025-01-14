@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_common/get_reset.dart';
 import 'package:kumbuz/configs/theme/styles.dart';
 import 'package:kumbuz/features/sateva/domain/entities/kixikila/kixikila.dart';
 import 'package:kumbuz/features/sateva/domain/entities/kixikila/kixikila_guest.dart';
@@ -11,7 +10,6 @@ import '../../../../../../core/utils/currency_utils.dart';
 import '../../../../../../core/utils/datetime_manipulation.dart';
 import '../controller/kixikila_controller.dart';
 import '../payments/payments_history.dart';
-import 'components/head_details.dart';
 
 class KixikilaDetails extends StatefulWidget {
   Kixikila kixikila;

@@ -1,7 +1,6 @@
 import 'dart:convert';
 import 'dart:developer';
 import 'dart:io';
-
 import 'package:google_generative_ai/google_generative_ai.dart';
 import 'package:http/http.dart';
 
@@ -48,11 +47,11 @@ class APIs {
 
               //body
               body: jsonEncode({
-                "model": "gpt-3.5-turbo",
-                "max_tokens": 2000,
-                "temperature": 0,
-                "messages": [
-                  {"role": "user", "content": question},
+                'model': 'gpt-3.5-turbo',
+                'max_tokens': 2000,
+                'temperature': 0,
+                'messages': [
+                  {'role': 'user', 'content': question},
                 ]
               }));
 

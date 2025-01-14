@@ -11,6 +11,7 @@ import 'core/di/dependecy_injection.dart';
 import 'core/setup_app.dart';
 import 'core/utils/navigation_service.dart';
 import 'core/utils/router.dart';
+import 'features/kcalculator/provider/cal_provider.dart';
 import 'features/sateva/data/models/user.dart';
 import 'features/sateva/data/models/wallet.dart';
 import 'features/sateva/domain/repositories/i_notification_repository.dart';
@@ -36,6 +37,7 @@ class App extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => WalletController()),
+        ChangeNotifierProvider(create: (_) => CalculatorProvider()),
         ChangeNotifierProvider(create: (_) => BudgetController()),
         ChangeNotifierProvider(create: (_) => TransactionController()),
         ChangeNotifierProvider(create: (_) => ExpenseController()),

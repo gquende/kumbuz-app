@@ -1,21 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:kumbuz/configs/theme/styles.dart';
-import 'package:kumbuz/core/di/dependecy_injection.dart';
 import 'package:kumbuz/core/utils/currency_utils.dart';
 import 'package:kumbuz/features/sateva/domain/entities/transaction_entity.dart';
-import 'package:kumbuz/features/sateva/domain/usecases/transactions_usecase/delete_transactions.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/expense/add_expense.dart';
-import 'package:kumbuz/features/sateva/presenter/pages/expense/controller/expense_controller.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/income/income_form.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/transactions/controller/transaction_controller.dart';
-import 'package:kumbuz/shared/presentation/ui/spacing.dart';
 import 'package:provider/provider.dart';
 
 import '../../../../../core/utils/wiiget_utils.dart';
 import '../../../data/models/expense.dart';
 import '../../../data/models/income.dart';
-import '../../../data/models/wallet_transaction.dart';
-import '../../../domain/usecases/controllers/wallet_ controller.dart';
 
 class TransactionDetails extends StatefulWidget {
   TransactionEntity transaction;

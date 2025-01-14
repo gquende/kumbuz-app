@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:kumbuz/configs/theme/styles.dart';
 import 'package:kumbuz/core/utils/currency_utils.dart';
 import 'package:kumbuz/features/sateva/data/models/bank_account.dart';
 import 'package:kumbuz/features/sateva/data/models/wallet.dart';
