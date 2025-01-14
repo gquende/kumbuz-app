@@ -26,6 +26,7 @@ class _SignUpState extends State<SignUp> {
   var isLoading = false.obs;
 
   GlobalKey<FormState> _formKey = GlobalKey();
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -315,7 +316,7 @@ class _SignUpState extends State<SignUp> {
                                 }
                               },
                               child: isLoading.isTrue
-                                  ? CircularProgressIndicator(
+                                  ? const CircularProgressIndicator(
                                       color: Colors.white,
                                     )
                                   : const Text(
@@ -349,11 +350,5 @@ class _SignUpState extends State<SignUp> {
         ),
       ),
     );
-  }
-
-  void _login(String username, String password) {
-    print('$username and $password');
-    var teste = true;
-    if (teste) {}
   }
 }

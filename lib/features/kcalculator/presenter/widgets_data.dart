@@ -9,7 +9,7 @@ List<Widget> buttonList = [
     textColor: AppColors.primaryColor,
   ),
   Button1(
-    label: "/",
+    label: "÷",
     textColor: AppColors.primaryColor,
   ),
   Button1(

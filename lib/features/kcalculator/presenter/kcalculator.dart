@@ -7,22 +7,25 @@ import '../widgets/cal_button.dart';
 import '../widgets/textfield.dart';
 
 class Kcalculator extends StatelessWidget {
-  const Kcalculator({super.key});
+  Kcalculator({super.key, required this.value});
+
+  String value = '';
 
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.sizeOf(context).height;
     const padding = EdgeInsets.symmetric(horizontal: 25, vertical: 30);
     var decoration = BoxDecoration(
-        color: Theme.of(context).primaryColor,
+        color: Theme.of(context).colorScheme.secondaryContainer,
         borderRadius: BorderRadius.vertical(top: Radius.circular(30)));
 
     return Consumer<CalculatorProvider>(builder: (context, provider, _) {
+      provider.compController.text = value;
       return Scaffold(
-        backgroundColor: Colors.black,
+        //backgroundColor: Colors.black,
         appBar: AppBar(
           title: const Text("KCalculator"),
-          backgroundColor: Colors.black,
+          //backgroundColor: Colors.black,
         ),
         body: Column(
           children: [
@@ -59,24 +62,42 @@ class Kcalculator extends StatelessWidget {
                           children: [
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: List.generate(
-                                  3, (index) => buttonList[index + 12]),
+                              children: List.generate(4, (index) {
+                                if (index < 3) {
+                                  return buttonList[index + 12];
+                                }
+
+                                return CalculateButton(label: '=');
+                              }),
                             ),
                             const SizedBox(
                               height: 20,
                             ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: List.generate(
-                                  3, (index) => buttonList[index + 15]),
+                              children: List.generate(4, (index) {
+                                if (index < 3) {
+                                  return buttonList[index + 15];
+                                }
+
+                                return CalculateButton(label: 'OK');
+                              }),
                             )
                           ],
                         ),
                       ),
-                      const SizedBox(
-                        width: 20,
-                      ),
-                      const CalculateButton()
+                      // const SizedBox(
+                      //   width: 20,
+                      // ),
+                      // CalculateButton(
+                      //   label: '=',
+                      // ),
+                      // SizedBox(
+                      //   width: 20,
+                      // ),
+                      // CalculateButton(
+                      //   label: 'OK',
+                      // )
                     ],
                   )
                 ],

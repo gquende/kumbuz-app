@@ -13,21 +13,30 @@ class Button1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //label = label.contains('/') ? '÷' : label;
+
     return InkWell(
       onTap: () => Provider.of<CalculatorProvider>(context, listen: false)
           .setValue(label),
       child: Material(
         elevation: 3,
-        color: AppColors.primaryColor,
+        color: AppColors.greyColor,
         borderRadius: BorderRadius.circular(50),
         child: CircleAvatar(
           radius: 36,
-          backgroundColor: Theme.of(context).colorScheme.secondaryContainer,
-          child: Text(
-            label,
-            style: TextStyle(
-                color: textColor, fontSize: 32, fontWeight: FontWeight.w600),
-          ),
+          backgroundColor: Theme.of(context).colorScheme.secondary,
+          child: label.contains('AC')
+              ? Icon(
+                  Icons.backspace,
+                  color: Theme.of(context).primaryColor,
+                )
+              : Text(
+                  label,
+                  style: TextStyle(
+                      color: textColor,
+                      fontSize: 32,
+                      fontWeight: FontWeight.w600),
+                ),
         ),
       ),
     );

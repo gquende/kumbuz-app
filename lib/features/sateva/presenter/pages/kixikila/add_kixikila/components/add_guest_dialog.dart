@@ -37,13 +37,6 @@ Future<void> addGuestDialog(BuildContext context) async {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          // const SizedBox(
-                          //   height: 10,
-                          // ),
-                          // const Text("Nome de utilizador"),
-                          // const SizedBox(
-                          //   height: 5,
-                          // ),
                           Padding(
                             padding: const EdgeInsets.all(0.0),
                             child: TextFieldTags<String>(
