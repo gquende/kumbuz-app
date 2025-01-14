@@ -9,6 +9,7 @@ import 'package:provider/provider.dart';
 
 import '../../../../../app.dart';
 import '../../../../../core/singletons/globals.dart';
+import '../../../../kcalculator/presenter/kcalculator.dart';
 import '../../../domain/entities/category.dart';
 
 class AddExpense extends StatefulWidget {
@@ -151,7 +152,18 @@ class _AddExpenseState extends State<AddExpense> {
                               padding: const EdgeInsets.all(4.0),
                               child: TextFormField(
                                 keyboardType: TextInputType.number,
+                                readOnly: true,
                                 controller: _amountController,
+                                onTap: () async {
+                                  _amountController
+                                      .text = (await Navigator.of(context)
+                                          .push(MaterialPageRoute(
+                                              builder: (context) => Kcalculator(
+                                                    value:
+                                                        _amountController.text,
+                                                  )))) ??
+                                      _amountController.text;
+                                },
                                 validator: (value) {
                                   if (value!.isEmpty) {
                                     return "Insira um valor";

@@ -7,6 +7,7 @@ import 'package:provider/provider.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../../../app.dart';
+import '../../../../kcalculator/presenter/kcalculator.dart';
 
 class AddDebt extends StatefulWidget {
   @override
@@ -176,6 +177,7 @@ class _AddDebtState extends State<AddDebt> {
                                 child: TextFormField(
                                   keyboardType: TextInputType.number,
                                   controller: _amountFieldController,
+                                  readOnly: true,
                                   decoration: InputDecoration(
                                       enabledBorder: InputBorder.none,
                                       fillColor: AppColors.greyColor,
@@ -196,6 +198,18 @@ class _AddDebtState extends State<AddDebt> {
                                           borderRadius:
                                               BorderRadius.circular(40),
                                           borderSide: BorderSide.none)),
+                                  onTap: () async {
+                                    _amountFieldController.text =
+                                        (await Navigator.of(context).push(
+                                                MaterialPageRoute(
+                                                    builder: (context) =>
+                                                        Kcalculator(
+                                                          value:
+                                                              _amountFieldController
+                                                                  .text,
+                                                        )))) ??
+                                            _amountFieldController.text;
+                                  },
                                   onChanged: (value) {
                                     _formKey.currentState?.validate();
                                   },

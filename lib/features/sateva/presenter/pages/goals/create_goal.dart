@@ -3,6 +3,8 @@ import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/goals/controller/goal_controller.dart';
 import 'package:kumbuz/shared/presentation/ui/spacing.dart';
 
+import '../../../../kcalculator/presenter/kcalculator.dart';
+
 class CreateGoal extends StatefulWidget {
   const CreateGoal({super.key});
 
@@ -135,6 +137,7 @@ class _CreateGoalState extends State<CreateGoal> {
                                     padding: const EdgeInsets.all(10),
                                     child: TextField(
                                       keyboardType: TextInputType.number,
+                                      readOnly: true,
                                       controller: _controller.amountController,
                                       decoration: const InputDecoration(
                                           prefixIcon: Icon(
@@ -156,6 +159,18 @@ class _CreateGoalState extends State<CreateGoal> {
                                           labelStyle: TextStyle(
                                               color: Color(0xff000000)),
                                           border: OutlineInputBorder()),
+                                      onTap: () async {
+                                        _controller.amountController
+                                            .text = (await Navigator.of(context)
+                                                .push(MaterialPageRoute(
+                                                    builder: (context) =>
+                                                        Kcalculator(
+                                                          value: _controller
+                                                              .amountController
+                                                              .text,
+                                                        )))) ??
+                                            _controller.amountController.text;
+                                      },
                                     ),
                                   ),
                                 ),
