@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 import 'package:kumbuz/core/di/dependecy_injection.dart';
 import 'package:kumbuz/features/sateva/domain/entities/notification.dart';
 import 'package:kumbuz/features/sateva/domain/repositories/i_notification_repository.dart';
-import 'package:kumbuz/mocks/notifications_mock.dart';
 
 class NotificationController extends GetxController {
   var notifications = <NotificationEntity>[].obs;

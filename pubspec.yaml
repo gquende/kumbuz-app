@@ -58,6 +58,7 @@ dependencies:
   percent_indicator: ^4.2.4
   multiple_search_selection: ^2.7.1
   dropdown_model_list: ^2.1.5
+  function_tree: ^0.9.1
 
 dev_dependencies:
   flutter_test:

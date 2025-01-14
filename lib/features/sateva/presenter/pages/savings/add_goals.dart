@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:kumbuz/configs/config.dart';
-import 'package:kumbuz/features/sateva/data/models/goals.dart';
-
 import 'package:kumbuz/core/utils/datetime_manipulation.dart';
+import 'package:kumbuz/features/sateva/data/models/goals.dart';
 import 'package:kumbuz/features/sateva/domain/usecases/goals_usecases.dart';
 import 'package:provider/provider.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../../../app.dart';
-import '../../../../../main.dart';
 
 class AddGoals extends StatefulWidget {
   @override

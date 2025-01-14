@@ -27,6 +27,9 @@ class ChatController extends GetxController {
         list.add(Message(msg: question, msgType: MessageType.user));
         list.add(Message(msg: '', msgType: MessageType.bot));
         _scrollDown();
+//String test12="12*123";
+
+//test12.interpret();
 
         var newQuestion = question + ". Responde com no máximo 150 palavras";
         var res = await APIs.getAnswer(newQuestion);

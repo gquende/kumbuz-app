@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
@@ -6,7 +5,6 @@ import 'package:uuid/uuid.dart';
 
 import '../../../../../../app.dart';
 import '../../../../../../core/utils/datetime_manipulation.dart';
-import '../../../../../../main.dart';
 import '../../../../data/models/goals.dart';
 import '../../../../domain/entities/category.dart';
 import '../../../../domain/usecases/controllers/wallet_ controller.dart';

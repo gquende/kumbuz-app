@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
-import 'package:kumbuz/features/sateva/presenter/pages/expense/controller/expense_controller.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/goals/controller/goal_controller.dart';
 import 'package:kumbuz/shared/presentation/ui/spacing.dart';
 

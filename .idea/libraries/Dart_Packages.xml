@@ -450,6 +450,13 @@
             </list>
           </value>
         </entry>
+        <entry key="function_tree">
+          <value>
+            <list>
+              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/function_tree-0.9.1/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="fw_tab_bar">
           <value>
             <list>
@@ -1135,6 +1142,7 @@
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_local_notifications_platform_interface-8.0.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_speed_dial-7.0.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_svg-2.0.17/lib" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/function_tree-0.9.1/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/fw_tab_bar-0.0.3/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/get-4.6.6/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/get_it-8.0.3/lib" />

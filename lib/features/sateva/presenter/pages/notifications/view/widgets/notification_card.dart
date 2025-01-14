@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:kumbuz/core/utils/datetime_manipulation.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/notifications/controller/notification_controller.dart';
-import 'package:provider/provider.dart';
+
 import '../../../../../../../configs/theme/styles.dart';
 import '../../../../../../../core/di/dependecy_injection.dart';
 import '../../../../../domain/entities/notification.dart';
-import '../../../../../domain/usecases/notification_usecases/insert_notification_usecase.dart';
 import '../open_notification.dart';
 
 class NotificationCard extends StatefulWidget {

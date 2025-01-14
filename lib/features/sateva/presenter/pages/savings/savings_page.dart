@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/goals/create_goal.dart';
-import 'package:kumbuz/features/sateva/presenter/pages/savings/add_goals.dart';
 import 'package:provider/provider.dart';
 
 import '../../../data/models/goals.dart';
