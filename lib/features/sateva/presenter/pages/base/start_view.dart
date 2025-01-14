@@ -23,14 +23,14 @@ class StartView extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Container(
+                      SizedBox(
                         width: 140,
                         height: 140,
                         child: Image.asset(AppEnvironment.env == Environment.dev
                             ? AppFiles.LOGO
                             : AppFiles.LOGO2),
                       ),
-                      SizedBox(height: 20),
+                      const SizedBox(height: 20),
                       AppEnvironment.env == Environment.dev
                           ? LoadingAnimationWidget.staggeredDotsWave(
                               color: AppColors.primaryColor, size: 50)

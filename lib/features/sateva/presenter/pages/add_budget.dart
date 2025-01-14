@@ -9,6 +9,7 @@ import 'package:provider/provider.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../../app.dart';
+import '../../../kcalculator/presenter/kcalculator.dart';
 import '../../domain/entities/category.dart';
 
 class AddBudget extends StatefulWidget {
@@ -99,7 +100,6 @@ class _AddBudgetState extends State<AddBudget> {
                                       enabledBorder: InputBorder.none,
                                       filled: true,
                                       hintStyle: TextStyle(
-                                          fontFamily: 'Raleway',
                                           fontSize: MediaQuery.of(context)
                                                   .size
                                                   .width /
@@ -142,6 +142,19 @@ class _AddBudgetState extends State<AddBudget> {
                                 child: TextFormField(
                                   keyboardType: TextInputType.number,
                                   controller: _amountFieldController,
+                                  readOnly: true,
+                                  onTap: () async {
+                                    _amountFieldController.text =
+                                        (await Navigator.of(context).push(
+                                                MaterialPageRoute(
+                                                    builder: (context) =>
+                                                        Kcalculator(
+                                                          value:
+                                                              _amountFieldController
+                                                                  .text,
+                                                        )))) ??
+                                            _amountFieldController.text;
+                                  },
                                   decoration: InputDecoration(
                                       fillColor: AppColors.greyColor,
                                       enabledBorder: InputBorder.none,
@@ -254,9 +267,9 @@ class _AddBudgetState extends State<AddBudget> {
                               context: context,
                               builder: (context) {
                                 return SimpleDialog(
-                                    title: Text("Orçamento adicionada"),
+                                    title: const Text('Orçamento adicionada'),
                                     children: [
-                                      Container(
+                                      SizedBox(
                                         height:
                                             MediaQuery.of(context).size.height /
                                                 3,
