@@ -8,10 +8,6 @@ import 'package:kumbuz/features/sateva/domain/entities/kixikila/kixikila.dart';
 import 'package:kumbuz/features/sateva/domain/entities/kixikila/kixikila_guest.dart';
 import 'package:kumbuz/features/sateva/domain/entities/kixikila/kixikila_payment.dart';
 import 'package:kumbuz/features/sateva/domain/usecases/kixikila_usecases/guests/get_all_usecase.dart';
-import 'package:kumbuz/features/sateva/domain/usecases/kixikila_usecases/payments/get_all_usecase.dart';
-import 'package:kumbuz/main.dart';
-import 'package:kumbuz/mocks/kixikila_guests_mock.dart';
-import 'package:kumbuz/mocks/kixikilas_mock.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../../../../app.dart';

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:kumbuz/core/di/dependecy_injection.dart';
-import 'package:kumbuz/core/utils/strings_utils.dart';
-import 'package:kumbuz/features/sateva/domain/usecases/user_usecases/user_get_by_id_usecase.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/kixikila/controller/kixikila_controller.dart';
 import 'package:textfield_tags/textfield_tags.dart';
 
@@ -39,13 +37,6 @@ Future<void> addGuestDialog(BuildContext context) async {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          // const SizedBox(
-                          //   height: 10,
-                          // ),
-                          // const Text("Nome de utilizador"),
-                          // const SizedBox(
-                          //   height: 5,
-                          // ),
                           Padding(
                             padding: const EdgeInsets.all(0.0),
                             child: TextFieldTags<String>(

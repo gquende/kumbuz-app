@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:kumbuz/core/di/dependecy_injection.dart';
 import 'package:kumbuz/core/utils/loading_screen.dart';
-import 'package:kumbuz/features/open_finance/presenter/bank_accounts_page.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/auth/controller/auth_controller.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/auth/login.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/category/categories.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/kixikila/kixikila_page.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/savings/savings_page.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/wallets/wallets_page.dart';
-import 'package:kumbuz/main.dart';
 
 import '../../../../../app.dart';
 import '../debts/debts_page.dart';

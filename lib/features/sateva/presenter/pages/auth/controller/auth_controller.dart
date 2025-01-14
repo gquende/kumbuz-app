@@ -44,6 +44,8 @@ class AuthController extends GetxController {
         password: user.password,
         token: ""));
 
+    print("Result $result");
+
     if (result != null) {
       // user.uuId = result.id;
       var value = await AppConfiguration.database!.userDao.insertItem(user);

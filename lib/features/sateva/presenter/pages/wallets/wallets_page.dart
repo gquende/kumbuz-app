@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:kumbuz/configs/assets.dart';
 import 'package:kumbuz/features/open_finance/presenter/add_bank_account.dart';
 import 'package:kumbuz/features/open_finance/presenter/controllers/bank_controller.dart';
-import 'package:kumbuz/features/open_finance/presenter/widgets/bank_account_card.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/wallets/widgets/wallet_card.dart';
-import 'package:kumbuz/main.dart';
 
 import '../../../../../core/di/dependecy_injection.dart';
 import '../../../domain/usecases/wallet_usecases/get_wallet_by_type.dart';

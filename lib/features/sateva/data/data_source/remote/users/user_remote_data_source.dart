@@ -1,6 +1,7 @@
-import 'package:firebase_database/firebase_database.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_database/firebase_database.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:kumbuz/core/error/log/catch_error_log.dart';
 
 class UserRemoteDataSource {
   static final FirebaseDatabase database = FirebaseDatabase.instance;
@@ -22,8 +23,10 @@ class UserRemoteDataSource {
       //   email: userData["username"],
       //   password: userData["password"],
       // );
-      var messageToken = await messaging.getToken();
-      print("Token: ${messageToken}");
+
+      print("Sai do codigo...");
+      //var messageToken = await messaging.getToken();
+      //print("Token: ${messageToken}");
       print("User: ${credentials.user?.uid}");
       userData["password"] = null;
       //userData["id"] = credentials.user?.uid ?? userData["id"];
@@ -33,17 +36,18 @@ class UserRemoteDataSource {
           .child("data")
           .set(userData)
           .then((value) {
-        database
-            .ref("notification_tokens")
-            .child(userData["id"])
-            .set(messageToken);
+        // database
+        //     .ref("notification_tokens")
+        //     .child(userData["id"])
+        //     .set(messageToken);
       }).onError((error, stackTrace) {
         print(error.toString());
       });
 
       return credentials;
-    } catch (error) {
-      print(error.toString());
+    } catch (error, stackTrace) {
+      errorLog(error, stackTrace);
+
       return null;
     }
   }

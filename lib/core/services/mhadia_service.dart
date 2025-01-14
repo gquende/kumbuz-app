@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class MhadiaService {
-  String base_url = "";
+  String base_url = '';
   Map<String, String>? _headers;
 
   MhadiaService({required this.base_url}) {
@@ -15,8 +15,8 @@ class MhadiaService {
   Future<Object?> request(
       {String? endpoint,
       Map<dynamic, dynamic>? parameters = const {},
-      String method = "GET"}) async {
-    Uri url = Uri.parse("${this.base_url}/${endpoint}");
+      String method = 'GET'}) async {
+    Uri url = Uri.parse('${this.base_url}/${endpoint}');
     // request()
     var request = http.Request(method, url);
     request.headers.addAll(_headers as Map<String, String>);
@@ -24,25 +24,25 @@ class MhadiaService {
     http.Response? response;
 
     switch (method) {
-      case "GET":
+      case 'GET':
         {
           response = await http.get(url, headers: this._headers);
           break;
         }
-      case "POST":
+      case 'POST':
         {
           response = await http.post(url,
               headers: _headers, body: jsonEncode(parameters));
 
           break;
         }
-      case "DELETE":
+      case 'DELETE':
         {
           response =
               await http.delete(url, headers: this._headers, body: parameters);
           break;
         }
-      case "PUT":
+      case 'PUT':
         {
           response =
               await http.put(url, headers: this._headers, body: parameters);
@@ -63,11 +63,11 @@ class MhadiaService {
   static Future<String?> getUserFinancePerfil(Map<int, int> answers) async {
     try {
       await Future.delayed(Duration(seconds: 10));
-      return "Financista";
+      return 'Financista';
 
       // return null;
     } catch (error) {}
 
-    return "undefined";
+    return 'undefined';
   }
 }

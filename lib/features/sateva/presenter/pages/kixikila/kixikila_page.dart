@@ -3,8 +3,8 @@ import 'package:get/get.dart';
 import 'package:kumbuz/core/di/dependecy_injection.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/kixikila/controller/kixikila_controller.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/kixikila/widgets/kixikila_card_widget.dart';
+
 import '../../../../../app.dart';
-import '../../../../../main.dart';
 import 'add_kixikila/kixikila_form2.dart';
 
 class KixikilaPage extends StatefulWidget {

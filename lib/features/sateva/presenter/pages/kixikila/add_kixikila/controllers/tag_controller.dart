@@ -1,5 +1,4 @@
 import 'package:kumbuz/core/di/dependecy_injection.dart';
-import 'package:kumbuz/features/sateva/domain/entities/kixikila/kixikila_guest.dart';
 import 'package:textfield_tags/textfield_tags.dart';
 
 import '../../controller/kixikila_controller.dart';

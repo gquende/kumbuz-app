@@ -1,19 +1,16 @@
-import 'package:flutter/material.dart';
 import 'package:date_format/date_format.dart';
-import 'package:lottie/lottie.dart';
+import 'package:flutter/material.dart';
 import 'package:kumbuz/configs/config.dart';
 import 'package:kumbuz/core/singletons/globals.dart';
-
+import 'package:kumbuz/features/kcalculator/presenter/kcalculator.dart';
 import 'package:kumbuz/features/sateva/data/models/income.dart';
 import 'package:kumbuz/features/sateva/domain/entities/category.dart';
 import 'package:kumbuz/features/sateva/domain/entities/transaction_entity.dart';
 import 'package:kumbuz/features/sateva/domain/usecases/controllers/wallet_%20controller.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/income/controller/income_controller.dart';
-
 import 'package:provider/provider.dart';
 
 import '../../../../../../app.dart';
-import '../../../../../../main.dart';
 
 class IncomeForm extends StatefulWidget {
   Income? income;
@@ -161,7 +158,18 @@ class _IncomeFormState extends State<IncomeForm> {
                               ),
                               child: TextFormField(
                                 keyboardType: TextInputType.number,
+                                readOnly: true,
                                 controller: _amountController,
+                                onTap: () async {
+                                  _amountController
+                                      .text = (await Navigator.of(context)
+                                          .push(MaterialPageRoute(
+                                              builder: (context) => Kcalculator(
+                                                    value:
+                                                        _amountController.text,
+                                                  )))) ??
+                                      _amountController.text;
+                                },
                                 decoration: const InputDecoration(
                                     enabledBorder: InputBorder.none,
                                     focusedBorder: InputBorder.none,
