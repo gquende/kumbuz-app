@@ -31,6 +31,7 @@ class _BudgetPageState extends State<BudgetPage>
   int pageIndex = 0;
   int activeDay = 3;
   List<Budget> budgets = [];
+
   bool _isCardDetailsOpened() => _controller.isCompleted;
 
   @override
@@ -105,8 +106,12 @@ class _BudgetPageState extends State<BudgetPage>
                                     return Padding(
                                       padding:
                                           const EdgeInsets.only(bottom: 12.0),
-                                      child: BudgetCard(
-                                          budget: (snap.data as List)[index]),
+                                      child: Padding(
+                                        padding: const EdgeInsets.only(
+                                            left: 4.0, right: 4.0),
+                                        child: BudgetCard(
+                                            budget: (snap.data as List)[index]),
+                                      ),
                                     );
                                   })),
                                 ],
@@ -170,16 +175,16 @@ class _BudgetPageState extends State<BudgetPage>
     );
   }
 
-  // Color setTabColor(int index) {
-  //   switch (index) {
-  //     case 0:
-  //       return AppColors.primaryColor;
-  //     case 1:
-  //       return Colors.green;
-  //     case 2:
-  //       return Colors.red;
-  //   }
-  //
-  //   return AppColors.primaryColor;
-  // }
+// Color setTabColor(int index) {
+//   switch (index) {
+//     case 0:
+//       return AppColors.primaryColor;
+//     case 1:
+//       return Colors.green;
+//     case 2:
+//       return Colors.red;
+//   }
+//
+//   return AppColors.primaryColor;
+// }
 }
