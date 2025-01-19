@@ -22,85 +22,77 @@ class Kcalculator extends StatelessWidget {
     return Consumer<CalculatorProvider>(builder: (context, provider, _) {
       provider.compController.text = value;
       return Scaffold(
-        //backgroundColor: Colors.black,
-        appBar: AppBar(
-          title: const Text("KCalculator"),
-          //backgroundColor: Colors.black,
-        ),
+        // backgroundColor: Colors.black,
+
         body: Column(
+          //spacing: 10,
           children: [
             CustomTextField(
               controller: provider.compController,
             ),
             const Spacer(),
-            Container(
-              height: screenHeight * 0.6,
-              width: double.infinity,
-              padding: padding,
-              decoration: decoration,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: List.generate(4, (index) => buttonList[index]),
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children:
-                        List.generate(4, (index) => buttonList[index + 4]),
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children:
-                        List.generate(4, (index) => buttonList[index + 8]),
-                  ),
-                  Row(
-                    children: [
-                      Expanded(
-                        child: Column(
-                          children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: List.generate(4, (index) {
-                                if (index < 3) {
-                                  return buttonList[index + 12];
-                                }
+            Padding(
+              padding: const EdgeInsets.only(left: 20.0, right: 20.0),
+              child: Container(
+                //  height: screenHeight * 0.,
+                width: double.infinity,
+                padding: padding,
+                decoration: decoration,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  spacing: 10,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: List.generate(4, (index) => buttonList[index]),
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children:
+                          List.generate(4, (index) => buttonList[index + 4]),
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children:
+                          List.generate(4, (index) => buttonList[index + 8]),
+                    ),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Column(
+                            children: [
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: List.generate(4, (index) {
+                                  if (index < 3) {
+                                    return buttonList[index + 12];
+                                  }
 
-                                return CalculateButton(label: '=');
-                              }),
-                            ),
-                            const SizedBox(
-                              height: 20,
-                            ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: List.generate(4, (index) {
-                                if (index < 3) {
-                                  return buttonList[index + 15];
-                                }
+                                  return CalculateButton(label: '=');
+                                }),
+                              ),
+                              const SizedBox(
+                                height: 10,
+                              ),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: List.generate(4, (index) {
+                                  if (index < 3) {
+                                    return buttonList[index + 15];
+                                  }
 
-                                return CalculateButton(label: 'OK');
-                              }),
-                            )
-                          ],
+                                  return CalculateButton(label: 'OK');
+                                }),
+                              )
+                            ],
+                          ),
                         ),
-                      ),
-                      // const SizedBox(
-                      //   width: 20,
-                      // ),
-                      // CalculateButton(
-                      //   label: '=',
-                      // ),
-                      // SizedBox(
-                      //   width: 20,
-                      // ),
-                      // CalculateButton(
-                      //   label: 'OK',
-                      // )
-                    ],
-                  )
-                ],
+                      ],
+                    )
+                  ],
+                ),
               ),
             )
           ],

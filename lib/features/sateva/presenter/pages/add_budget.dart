@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:kumbuz/configs/config.dart';
 import 'package:kumbuz/core/singletons/globals.dart';
 import 'package:kumbuz/core/utils/datetime_manipulation.dart';
@@ -144,7 +145,23 @@ class _AddBudgetState extends State<AddBudget> {
                                   controller: _amountFieldController,
                                   readOnly: true,
                                   onTap: () async {
-                                    _amountFieldController.text =
+                                    Get.bottomSheet(
+                                      Kcalculator(
+                                        value: _amountFieldController.text,
+                                      ),
+                                      backgroundColor: Theme.of(context)
+                                          .colorScheme
+                                          .primaryContainer,
+                                    ).then((value) {
+                                      print("VALOR:: $value");
+
+                                      setState(() {
+                                        _amountFieldController.text = value ??
+                                            _amountFieldController.text;
+                                      });
+                                    });
+
+                                    /* _amountFieldController.text =
                                         (await Navigator.of(context).push(
                                                 MaterialPageRoute(
                                                     builder: (context) =>
@@ -153,7 +170,7 @@ class _AddBudgetState extends State<AddBudget> {
                                                               _amountFieldController
                                                                   .text,
                                                         )))) ??
-                                            _amountFieldController.text;
+                                            _amountFieldController.text;*/
                                   },
                                   decoration: InputDecoration(
                                       fillColor: AppColors.greyColor,
@@ -267,6 +284,9 @@ class _AddBudgetState extends State<AddBudget> {
                               context: context,
                               builder: (context) {
                                 return SimpleDialog(
+                                    backgroundColor: Theme.of(context)
+                                        .colorScheme
+                                        .secondaryContainer,
                                     title: const Text('Orçamento adicionada'),
                                     children: [
                                       SizedBox(
