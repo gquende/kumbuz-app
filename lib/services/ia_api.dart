@@ -1,10 +1,11 @@
 import 'dart:convert';
 import 'dart:developer';
 import 'dart:io';
+
 import 'package:google_generative_ai/google_generative_ai.dart';
 import 'package:http/http.dart';
 
-import '../../helper/global.dart';
+import '../helper/global.dart';
 
 class APIs {
   //get answer from google gemini ai

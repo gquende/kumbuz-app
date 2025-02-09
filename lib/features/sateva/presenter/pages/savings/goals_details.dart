@@ -2,13 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:kumbuz/configs/config.dart';
 import 'package:kumbuz/core/singletons/globals.dart';
 import 'package:kumbuz/core/utils/datetime_manipulation.dart';
-import 'package:kumbuz/features/calculator/calculator.dart';
 import 'package:kumbuz/features/sateva/data/models/goals.dart';
 import 'package:kumbuz/features/sateva/data/models/wallet_transaction.dart';
 import 'package:kumbuz/features/sateva/domain/usecases/controllers/wallet_%20controller.dart';
 import 'package:kumbuz/features/sateva/domain/usecases/goals_usecases.dart';
-import 'package:kumbuz/features/sateva/presenter/widget/day_transaction_widget.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/savings/components/goal_card.dart';
+import 'package:kumbuz/features/sateva/presenter/widget/day_transaction_widget.dart';
 import 'package:provider/provider.dart';
 import 'package:uuid/uuid.dart';
 
@@ -93,8 +92,8 @@ class _GoalDetailsState extends State<GoalDetails> {
       floatingActionButton: FloatingActionButton(
         backgroundColor: AppColors.primaryColor,
         onPressed: () async {
-          await Navigator.of(context)
-              .push(MaterialPageRoute(builder: (ctx) => Calculator()));
+          // await Navigator.of(context)
+          //     .push(MaterialPageRoute(builder: (ctx) => Calculator()));
 
           if (calculatorResult.isNotEmpty && calculatorResult != "0") {
             WalletTransaction goalTransaction = WalletTransaction(

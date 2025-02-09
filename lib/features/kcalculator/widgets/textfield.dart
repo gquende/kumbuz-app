@@ -12,7 +12,7 @@ class CustomTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 30),
+      padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 10),
       child: TextField(
         scrollController: scrollController,
         controller: controller,
@@ -21,12 +21,12 @@ class CustomTextField extends StatelessWidget {
             border: InputBorder.none,
             fillColor: Theme.of(context).colorScheme.secondaryContainer,
             filled: true),
-        style: const TextStyle(fontSize: 50),
+        style: const TextStyle(fontSize: 30),
         readOnly: true,
         autofocus: true,
         showCursor: true,
         onChanged: (value) {
-          scrollController.jumpTo(100);
+          scrollController.jumpTo(10000);
         },
       ),
     );

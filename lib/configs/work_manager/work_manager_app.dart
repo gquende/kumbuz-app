@@ -23,7 +23,7 @@ Future showNotification() async {
   await flutterLocalNotificationsPlugin.show(
     rndmIndex,
     'Teste de notificação',
-    "testando",
+    'testando',
     platformChannelSpecifics,
   );
 
@@ -63,7 +63,7 @@ void callbackDispatcher() {
   Workmanager().executeTask((task, inputData) {
     print("Tarefa em segundo plano: $task");
     switch (task) {
-      case "simpleTask":
+      case 'simpleTask':
         {
           showNotification();
         }
@@ -71,7 +71,7 @@ void callbackDispatcher() {
       default:
         {
           showNotification();
-          print("Testabd");
+          print('Testabd');
         }
         break;
     }

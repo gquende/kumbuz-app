@@ -1,4 +1,4 @@
-import 'package:kumbuz/core/services/one_signal_service.dart';
+import '../../../../../services/one_signal_service.dart';
 
 class SendNotificationUsecase {
   late OneSignalService _service;

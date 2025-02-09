@@ -2,8 +2,8 @@ import 'package:kumbuz/features/sateva/domain/entities/bank_transaction.dart';
 import 'package:kumbuz/mocks/bank_transactions_mock.dart';
 import 'package:uuid/uuid.dart';
 
-import '../../../../core/services/nordigen_service.dart';
 import '../../../../core/utils/datetime_manipulation.dart';
+import '../../../../services/nordigen_service.dart';
 
 class FetchTransactionUsecase {
   final String INSTITUTION_ID;

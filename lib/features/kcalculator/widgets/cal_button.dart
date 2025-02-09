@@ -22,15 +22,15 @@ class CalculateButton extends StatelessWidget {
         }
       },
       child: Container(
-        height: 70,
-        width: 70,
+        height: 52,
+        width: 52,
         decoration: BoxDecoration(
             color: Theme.of(context).primaryColor,
             borderRadius: BorderRadius.circular(40)),
         child: Center(
           child: Text(
             label,
-            style: const TextStyle(fontSize: 32, color: Colors.white),
+            style: const TextStyle(fontSize: 22, color: Colors.white),
           ),
         ),
       ),

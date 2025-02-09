@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:kumbuz/core/di/dependecy_injection.dart';
 import 'package:kumbuz/core/error/log/catch_error_log.dart';
 import 'package:kumbuz/core/mock_data.dart';
-import 'package:kumbuz/core/services/nordigen_service.dart';
 import 'package:kumbuz/core/utils/datetime_manipulation.dart';
 import 'package:kumbuz/features/open_finance/domain/usecases/connect_account_usecase.dart';
 import 'package:kumbuz/features/open_finance/domain/usecases/fetch_transaction_usecase.dart';
@@ -24,6 +23,7 @@ import 'package:uuid/uuid.dart';
 
 import '../../../../configs/config.dart';
 import '../../../../configs/theme/colors.dart';
+import '../../../../services/nordigen_service.dart';
 import '../../../sateva/data/models/expense.dart';
 import '../../domain/entity/bank_entity.dart';
 
@@ -421,39 +421,39 @@ class BankController extends ChangeNotifier {
     });
   }
 
-  // Future<void> _fetchNewTransactions() async {}
+// Future<void> _fetchNewTransactions() async {}
 
-  // Função que faz a requisição à API do banco para buscar transações
-  // Future<void> _fetchNewTransactions() async {
-  //   final response = await http.get(
-  //     Uri.parse('https://api.banco.com/transactions'), // Exemplo de URL da API
-  //     headers: {
-  //       'Authorization': 'Bearer SEU_TOKEN_DE_ACESSO',
-  //     },
-  //   );
-  //
-  //   if (response.statusCode == 200) {
-  //     List<dynamic> transactions = json.decode(response.body);
-  //     // Verifica se há novas transações
-  //     if (transactions.isNotEmpty &&
-  //         transactions[0]['id'] != _lastTransactionId) {
-  //       setState(() {
-  //         _transactions = transactions;
-  //         _lastTransactionId =
-  //             transactions[0]['id']; // Atualiza o ID da última transação
-  //       });
-  //       // Lógica para registrar ou notificar sobre novas transações
-  //       _registerNewTransaction(transactions[0]);
-  //     }
-  //   } else {
-  //     // Trate erros de requisição aqui
-  //     print('Erro ao obter transações: ${response.statusCode}');
-  //   }
-  // }
+// Função que faz a requisição à API do banco para buscar transações
+// Future<void> _fetchNewTransactions() async {
+//   final response = await http.get(
+//     Uri.parse('https://api.banco.com/transactions'), // Exemplo de URL da API
+//     headers: {
+//       'Authorization': 'Bearer SEU_TOKEN_DE_ACESSO',
+//     },
+//   );
+//
+//   if (response.statusCode == 200) {
+//     List<dynamic> transactions = json.decode(response.body);
+//     // Verifica se há novas transações
+//     if (transactions.isNotEmpty &&
+//         transactions[0]['id'] != _lastTransactionId) {
+//       setState(() {
+//         _transactions = transactions;
+//         _lastTransactionId =
+//             transactions[0]['id']; // Atualiza o ID da última transação
+//       });
+//       // Lógica para registrar ou notificar sobre novas transações
+//       _registerNewTransaction(transactions[0]);
+//     }
+//   } else {
+//     // Trate erros de requisição aqui
+//     print('Erro ao obter transações: ${response.statusCode}');
+//   }
+// }
 
-  // Lógica para registrar ou exibir a nova transação
-  // void _registerNewTransaction(dynamic transaction) {
-  //   // Registrar no banco de dados local ou exibir ao usuário
-  //   print('Nova transação encontrada: $transaction');
-  // }
+// Lógica para registrar ou exibir a nova transação
+// void _registerNewTransaction(dynamic transaction) {
+//   // Registrar no banco de dados local ou exibir ao usuário
+//   print('Nova transação encontrada: $transaction');
+// }
 }

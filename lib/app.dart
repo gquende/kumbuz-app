@@ -60,7 +60,7 @@ class App extends StatelessWidget {
               AppTheme2.isDarkMode.value ? AppTheme2.darkMode : AppTheme2.light,
           darkTheme: AppTheme2.darkMode,
           supportedLocales: L10n.all,
-          locale: const Locale("pt"),
+          locale: const Locale("pt_pt"),
           localizationsDelegates: AppLocalizations.localizationsDelegates,
           debugShowCheckedModeBanner: false,
           //  home: const UserProfile2()),

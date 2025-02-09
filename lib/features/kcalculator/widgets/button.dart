@@ -23,7 +23,7 @@ class Button1 extends StatelessWidget {
         color: AppColors.greyColor,
         borderRadius: BorderRadius.circular(50),
         child: CircleAvatar(
-          radius: 36,
+          radius: 26,
           backgroundColor: Theme.of(context).colorScheme.secondary,
           child: label.contains('AC')
               ? Icon(
