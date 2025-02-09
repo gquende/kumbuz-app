@@ -77,7 +77,7 @@ class AppTheme2 {
   static setDarkMode(bool value) async {
     isDarkMode.value = value;
     var shared = await SharedPreferences.getInstance();
-    shared.setBool("themeMode", value);
+    shared.setBool('themeMode', value);
   }
 
   static Future<bool> loadThemeMode() async {

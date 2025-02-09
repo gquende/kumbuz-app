@@ -4,7 +4,6 @@ import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 import 'package:kumbuz/configs/environments/environments.dart';
 import 'package:kumbuz/configs/feature%20flags/feature_flags.dart';
 import 'package:kumbuz/core/di/dependecy_injection.dart';
-import 'package:kumbuz/features/open_finance/presenter/controllers/bank_controller.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/dashboard/dashborad.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/goals/create_goal.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/kixikila/kixikila_page.dart';
@@ -12,8 +11,7 @@ import 'package:provider/provider.dart';
 
 import '../../../../../../configs/config.dart';
 import '../../../../../../configs/theme/colors.dart';
-import '../../../../../../core/services/firebase_messagin_service.dart';
-import '../../../../../../core/services/notification_service.dart';
+import '../../../../../../services/notification_service.dart';
 import '../../../../../../shared/presentation/ui/widgets/notification_icon.dart';
 import '../../../../../chatbot/presenter/pages/chatbot_page.dart';
 import '../../../../../open_finance/presenter/add_bank_account.dart';
@@ -40,7 +38,6 @@ class _NewHomeState extends State<NewHome> {
   int pageIndex = 0;
   List<Widget> pages = [
     const DashBoard(),
-    // DailyPage(),
     StatsPage(),
     BudgetPage(),
     const UserProfile2(),
@@ -48,20 +45,12 @@ class _NewHomeState extends State<NewHome> {
   ];
 
   var tipsController = DI.get<TipsController>();
+
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
-    // initializeFirebaseMessaging();
     checkNotifications();
-
-    DI.get<BankController>().startTransactionListener();
-
     tipsController.showDayTips(context);
-  }
-
-  initializeFirebaseMessaging() async {
-    await DI.get<FirebaseMessagingService>().initialize();
   }
 
   checkNotifications() async {
@@ -70,15 +59,24 @@ class _NewHomeState extends State<NewHome> {
 
   @override
   Widget build(BuildContext context) {
-    var size = MediaQuery.of(context).size;
-
     context.watch<TransactionController>();
 
     return Scaffold(
         appBar: AppBar(
-          leading: const SizedBox(),
+          leading: GestureDetector(
+            onTap: () {
+              print("Call Chat bot");
+
+              Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => const Chatbot()));
+            },
+            child: Icon(
+              Icons.auto_awesome_sharp,
+              color: Theme.of(context).primaryColor,
+            ),
+          ),
           centerTitle: true,
-          title: Text("Meu Kumbu"),
+          title: Text("Kumbuz"),
           actions: const [
             Padding(padding: EdgeInsets.all(8.0), child: NotificationIcon())
           ],
@@ -173,29 +171,9 @@ class _NewHomeState extends State<NewHome> {
                     debugPrint("Taped on Add Bank Account");
                     Navigator.of(context).push(MaterialPageRoute(
                         builder: (context) => KixikilaPage()));
-                  }),
-              CustomSpeedDialChild(
-                  label: "Chatbot",
-                  icon: Icon(
-                    Icons.auto_awesome_sharp,
-                    color: AppColors.primaryColor,
-                  ),
-                  onTap: () {
-                    debugPrint("Taped on Add Bank Account");
-                    Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => const Chatbot()));
                   })
-              // CustomSpeedDialChild(
-              //     label: "test",
-              //     icon: Icon(
-              //       Icons.accessibility,
-              //       color: AppColors.primaryColor,
-              //     ),
-              //     onTap: () {
-              //       tipsCOntroller.showDayTips(context);
-              //     })
             ],
-            backgroundColor: AppColors.primaryColor,
+            backgroundColor: Theme.of(context).primaryColor,
             child: const Icon(
               Icons.add,
               color: Colors.white,
@@ -268,32 +246,11 @@ class _NewHomeState extends State<NewHome> {
                     color: AppColors.primaryColor,
                   ),
                   onTap: () {
-                    debugPrint("Taped on Add Bank Account");
                     Navigator.of(context).push(MaterialPageRoute(
                         builder: (context) => KixikilaPage()));
                   }),
-              CustomSpeedDialChild(
-                  label: "Chatbot",
-                  icon: Icon(
-                    Icons.auto_awesome_sharp,
-                    color: AppColors.primaryColor,
-                  ),
-                  onTap: () {
-                    debugPrint("Taped on Add Bank Account");
-                    Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => const Chatbot()));
-                  })
-              // CustomSpeedDialChild(
-              //     label: "test",
-              //     icon: Icon(
-              //       Icons.accessibility,
-              //       color: AppColors.primaryColor,
-              //     ),
-              //     onTap: () {
-              //       tipsCOntroller.showDayTips(context);
-              //     })
             ],
-            backgroundColor: AppColors.primaryColor,
+            backgroundColor: Theme.of(context).primaryColor,
             child: const Icon(
               Icons.add,
               color: Colors.white,
@@ -319,7 +276,7 @@ class _NewHomeState extends State<NewHome> {
     ];
 
     return AnimatedBottomNavigationBar(
-      activeColor: PRIMARY_COLOR,
+      activeColor: Theme.of(context).primaryColor,
       splashColor: secondary,
       inactiveColor: Colors.black.withOpacity(0.5),
       icons: iconItems,

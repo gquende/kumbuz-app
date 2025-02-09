@@ -67,11 +67,11 @@ import '../../features/sateva/domain/usecases/user_usecases/user_update_usecase.
 import '../../features/sateva/domain/usecases/wallet_usecases/get_wallet_by_type.dart';
 import '../../features/sateva/presenter/pages/tips/controller/tips_controller.dart';
 import '../../features/sateva/presenter/pages/transactions/controller/transaction_controller.dart';
-import '../services/dynamic_link_service.dart';
-import '../services/firebase_messagin_service.dart';
-import '../services/nordigen_service.dart';
-import '../services/notification_service.dart';
-import '../services/one_signal_service.dart';
+import '../../services/dynamic_link_service.dart';
+import '../../services/firebase_messagin_service.dart';
+import '../../services/nordigen_service.dart';
+import '../../services/notification_service.dart';
+import '../../services/one_signal_service.dart';
 import '../utils/navigation_service.dart';
 
 final class DependencyInjection {

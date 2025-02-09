@@ -2,12 +2,12 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:kumbuz/core/services/nordigen_service.dart';
 import 'package:kumbuz/core/setup_app.dart';
 import 'package:kumbuz/features/open_finance/domain/entity/bank_entity.dart';
 import 'package:kumbuz/features/open_finance/presenter/controllers/bank_controller.dart';
 import 'package:kumbuz/features/sateva/data/models/user.dart';
 import 'package:kumbuz/features/sateva/data/models/wallet.dart';
+import 'package:kumbuz/services/nordigen_service.dart';
 
 void main() {
   BankController? controller;

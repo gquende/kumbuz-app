@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:kumbuz/core/services/one_signal_service.dart';
 import 'package:kumbuz/features/sateva/domain/usecases/notification_usecases/send_notification_usecase.dart';
+import 'package:kumbuz/services/one_signal_service.dart';
 
 main() {
   // ONESIGNAL_APP_ID="97d3e02b-2259-437a-9251-e1559f34d71c"

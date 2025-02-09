@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kumbuz/core/setup_app.dart';
 import 'package:workmanager/workmanager.dart';
+
 import 'app.dart';
 import 'configs/config.dart';
 import 'configs/environments/environments.dart';

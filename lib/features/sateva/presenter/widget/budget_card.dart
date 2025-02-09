@@ -4,12 +4,16 @@ import 'package:get_it/get_it.dart';
 import 'package:kumbuz/configs/config.dart';
 import 'package:kumbuz/features/sateva/data/models/budget.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/budget_details.dart';
+
+import '../../../../configs/theme/styles.dart';
 // import 'package:provider/provider.dart';
 
 class BudgetCard extends StatelessWidget {
   // const BudgetCart({Key? key}) : super(key: key);
   Budget budget;
+
   BudgetCard({required this.budget});
+
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
@@ -21,9 +25,8 @@ class BudgetCard extends StatelessWidget {
       },
       child: Container(
         width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height / 3.8,
-        decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(8), color: Colors.white),
+        height: MediaQuery.of(context).size.height / 5,
+        decoration: AppStyles.containerDecoration(context),
         child: Padding(
           padding: const EdgeInsets.all(12.0),
           child: Column(
@@ -52,8 +55,8 @@ class BudgetCard extends StatelessWidget {
                               Container(
                                 width: size.width / 1.8,
                                 child: Text(
-                                  "${budget.name}",
-                                  style: TextStyle(
+                                  '${budget.name}',
+                                  style: const TextStyle(
                                       fontSize: 16,
                                       fontFamily: 'Poppins-Bold',
                                       color: Colors.black54),
@@ -61,8 +64,8 @@ class BudgetCard extends StatelessWidget {
                                 ),
                               ),
                               Text(
-                                "${CurrencyFormatter.format(budget.amount.abs(), GetIt.instance.get<CurrencyFormatterSettings>())}",
-                                style: TextStyle(
+                                '${CurrencyFormatter.format(budget.amount.abs(), GetIt.instance.get<CurrencyFormatterSettings>())}',
+                                style: const TextStyle(
                                     fontSize: 20,
                                     fontFamily: 'Poppins-SemiBold',
                                     color: Colors.grey),
@@ -77,27 +80,27 @@ class BudgetCard extends StatelessWidget {
                               builder: (context) =>
                                   BudgetDetails(budget: budget)));
                         },
-                        child: CircleAvatar(
+                        child: const CircleAvatar(
+                          backgroundColor: Color(0xffe5e5e5),
                           child: Icon(
                             Icons.arrow_forward_ios_outlined,
                             color: Colors.white,
                           ),
-                          backgroundColor: Color(0xffe5e5e5),
                         ),
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 8,
                   ),
                 ],
               ),
-              Divider(
+              const Divider(
                 height: 9,
               ),
               Column(
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: 8,
                   ),
                   Row(

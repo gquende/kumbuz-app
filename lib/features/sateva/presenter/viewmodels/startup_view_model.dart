@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:kumbuz/configs/config.dart';
-import 'package:kumbuz/core/services/dynamic_link_service.dart';
 import 'package:kumbuz/core/setup_app.dart';
 import 'package:kumbuz/core/utils/navigation_service.dart';
 import 'package:kumbuz/features/sateva/data/models/user.dart';
 import 'package:kumbuz/features/sateva/domain/usecases/category_usecases.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/auth/controller/auth_controller.dart';
 import 'package:kumbuz/features/sateva/presenter/viewmodels/base_model.dart';
+import 'package:kumbuz/services/dynamic_link_service.dart';
 
 import '../../../../app.dart';
 import '../../../../core/singletons/globals.dart';
