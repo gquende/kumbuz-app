@@ -8,8 +8,8 @@ import 'package:kumbuz/features/sateva/presenter/widget/day_transaction_widget.d
 import 'package:provider/provider.dart';
 
 import '../../../../core/di/dependecy_injection.dart';
-import '../../../../core/services/firebase_messagin_service.dart';
-import '../../../../core/services/notification_service.dart';
+import '../../../../services/firebase_messagin_service.dart';
+import '../../../../services/notification_service.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});

@@ -1,4 +1,4 @@
-import '../../../../core/services/nordigen_service.dart';
+import '../../../../services/nordigen_service.dart';
 
 class ConnectAccountUsecase {
   List<String>? _accountsConnected;

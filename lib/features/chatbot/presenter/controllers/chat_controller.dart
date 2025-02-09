@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../../app.dart';
-import '../../../../core/services/ia_api.dart';
 import '../../../../helper/my_dialog.dart';
+import '../../../../services/ia_api.dart';
 import '../../domain/entitites/message.dart';
 
 class ChatController extends GetxController {

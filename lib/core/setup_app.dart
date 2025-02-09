@@ -20,7 +20,7 @@ Future<void> setupApp() async {
   SharedPreferences storage = await SharedPreferences.getInstance();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
-  locator.registerSingleton(const CurrencyFormatterSettings(
+  locator.registerSingleton(const CurrencyFormat(
     symbol: 'AOA',
     symbolSide: SymbolSide.right,
     thousandSeparator: ' ',

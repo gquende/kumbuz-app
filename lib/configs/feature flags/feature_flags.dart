@@ -11,8 +11,6 @@ extension FeatureFlagExtension on FeatureFlag {
             return true;
           case FeatureFlag.kixikila:
             return true;
-          default:
-            return false;
         }
 
       case Environment.prod:
@@ -21,12 +19,7 @@ extension FeatureFlagExtension on FeatureFlag {
             return false;
           case FeatureFlag.kixikila:
             return true;
-          default:
-            return false;
         }
-
-      default:
-        return false;
     }
   }
 }
