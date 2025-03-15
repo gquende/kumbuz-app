@@ -16,6 +16,7 @@ class NotificationIcon extends StatefulWidget {
 
 class _NotificationIconState extends State<NotificationIcon> {
   var controller = DI.get<NotificationController>();
+
   @override
   void initState() {
     // TODO: implement initState
@@ -38,7 +39,7 @@ class _NotificationIconState extends State<NotificationIcon> {
         child: Stack(
           children: [
             const Positioned(
-              top: 8,
+              top: 6,
               child: Icon(
                 Icons.notifications_none_sharp,
                 size: 28,
