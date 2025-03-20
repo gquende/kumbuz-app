@@ -8,6 +8,8 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   Workmanager().initialize(callbackDispatcher, isInDebugMode: false);
+
+
   //
   // Workmanager().registerPeriodicTask(
   //   "1",
