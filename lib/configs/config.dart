@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:kumbuz/core/db/database.dart';
 
 import 'environments/environments.dart';
@@ -21,7 +20,7 @@ class AppFiles {
 class AppColors {
   static final backgroundColor = Colors.white;
   //Other Good Color
-  static final primaryColor = Color(0xFF665ced);
+  static const primaryColor = Color(0xFF665ced);
   static final bgColor = Color(0xFFf5f5f5);
   static final greyColor = Color(0xfff6f6f8);
   static final textPrimaryColor = Color(0xFF2f2c58);
