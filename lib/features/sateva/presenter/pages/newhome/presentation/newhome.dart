@@ -65,7 +65,6 @@ class _NewHomeState extends State<NewHome> {
         appBar: AppBar(
           leading: GestureDetector(
             onTap: () {
-              print("Call Chat bot");
 
               Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => const Chatbot()));
@@ -77,7 +76,10 @@ class _NewHomeState extends State<NewHome> {
           ),
           centerTitle: true,
           title: Text("Kumbuz"),
-          actions: const [
+
+          actions: [
+            pageIndex == 1 ? Icon(Icons.calendar_month) : SizedBox(),
+
             Padding(padding: EdgeInsets.all(8.0), child: NotificationIcon())
           ],
         ),
