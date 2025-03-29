@@ -74,6 +74,8 @@ import '../../services/notification_service.dart';
 import '../../services/one_signal_service.dart';
 import '../utils/navigation_service.dart';
 
+final getIt = GetIt.instance;
+
 final class DependencyInjection {
   static DependencyInjection? _instance;
 
@@ -88,7 +90,7 @@ final class DependencyInjection {
 
   Future<void> setup() async {
     // await Firebase.initializeApp();
-    var getIt = GetIt.instance;
+
     await dotenv.load();
 
     getIt.registerLazySingleton(() => ExpenseController());

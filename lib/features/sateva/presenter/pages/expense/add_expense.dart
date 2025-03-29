@@ -61,7 +61,6 @@ class _AddExpenseState extends State<AddExpense> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Nova Despesa"),
-        backgroundColor: Colors.redAccent,
         centerTitle: true,
       ),
       body: GestureDetector(

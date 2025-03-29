@@ -65,7 +65,6 @@ class _IncomeFormState extends State<IncomeForm> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Registar receita"),
-        backgroundColor: AppColors.primaryColor,
         centerTitle: true,
       ),
       body: GestureDetector(
