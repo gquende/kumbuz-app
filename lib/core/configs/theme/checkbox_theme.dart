@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kumbuz/configs/theme/colors.dart';
+import 'package:kumbuz/core/configs/theme/colors.dart';
 
 class TCheckBoxTheme {
   static final lightCheckButtonTheme = CheckboxThemeData(

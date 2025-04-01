@@ -2,7 +2,7 @@ import 'package:floor/floor.dart';
 import 'package:json_annotation/json_annotation.dart';
 import 'package:kumbuz/features/sateva/domain/entities/entity_base.dart';
 
-import '../../../../core/utils/utils.dart';
+import '../../../../utils/utils.dart';
 
 part 'user.g.dart';
 

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../../../../../core/di/dependecy_injection.dart';
-import '../../../../../../core/utils/currency_utils.dart';
-import '../../../../../../core/utils/datetime_manipulation.dart';
+import '../../../../../../utils/currency_utils.dart';
+import '../../../../../../utils/datetime_manipulation.dart';
 import '../../../../../../shared/presentation/ui/spacing.dart';
 import '../../../../domain/usecases/controllers/expense_controlller.dart';
 import '../../../../domain/usecases/controllers/wallet_ controller.dart';

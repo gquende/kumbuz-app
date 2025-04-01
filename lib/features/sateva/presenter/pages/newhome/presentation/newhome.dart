@@ -1,17 +1,17 @@
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
-import 'package:kumbuz/configs/environments/environments.dart';
-import 'package:kumbuz/configs/feature%20flags/feature_flags.dart';
+import 'package:kumbuz/core/configs/environments/environments.dart';
+import 'package:kumbuz/core/configs/feature%20flags/feature_flags.dart';
 import 'package:kumbuz/core/di/dependecy_injection.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/dashboard/dashborad.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/goals/create_goal.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/kixikila/kixikila_page.dart';
 import 'package:provider/provider.dart';
 
-import '../../../../../../configs/config.dart';
-import '../../../../../../configs/theme/colors.dart';
-import '../../../../../../services/notification_service.dart';
+import '../../../../../../core/configs/config.dart';
+import '../../../../../../core/configs/theme/colors.dart';
+import '../../../../../../core/services/notification_service.dart';
 import '../../../../../../shared/presentation/ui/widgets/notification_icon.dart';
 import '../../../../../chatbot/presenter/pages/chatbot_page.dart';
 import '../../../../../open_finance/presenter/add_bank_account.dart';

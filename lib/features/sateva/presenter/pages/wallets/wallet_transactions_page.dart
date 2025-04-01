@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:kumbuz/core/utils/currency_utils.dart';
+import 'package:kumbuz/utils/currency_utils.dart';
 import 'package:kumbuz/features/sateva/data/models/bank_account.dart';
 import 'package:kumbuz/features/sateva/data/models/wallet.dart';
 import 'package:provider/provider.dart';
 
-import '../../../../../configs/assets.dart';
-import '../../../../../configs/theme/colors.dart';
+import '../../../../../core/configs/assets.dart';
+import '../../../../../core/configs/theme/colors.dart';
 import '../../../../../shared/presentation/ui/spacing.dart';
 import '../../../data/models/wallet_transaction.dart';
 import '../../../domain/usecases/controllers/wallet_ controller.dart';

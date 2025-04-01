@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:kumbuz/core/di/dependecy_injection.dart';
-import 'package:kumbuz/core/utils/datetime_manipulation.dart';
+import 'package:kumbuz/utils/datetime_manipulation.dart';
 import 'package:kumbuz/features/sateva/data/models/income.dart';
 import 'package:kumbuz/features/sateva/domain/entities/transaction_entity.dart';
 import 'package:kumbuz/features/sateva/domain/usecases/expense_usecase/get_expense_by_id_usecase.dart';

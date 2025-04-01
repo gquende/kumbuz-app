@@ -3,7 +3,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:kumbuz/configs/config.dart';
+import 'package:kumbuz/core/configs/config.dart';
 import 'package:kumbuz/core/di/dependecy_injection.dart';
 import 'package:kumbuz/features/sateva/data/models/budget.dart';
 import 'package:kumbuz/features/sateva/data/models/expense.dart';
@@ -16,7 +16,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../../../app.dart';
-import '../../../../../core/utils/datetime_manipulation.dart';
+import '../../../../../utils/datetime_manipulation.dart';
 import '../notification_usecases/insert_notification_usecase.dart';
 import '../transactions_usecase/get_sum_transaction_by_type.dart';
 

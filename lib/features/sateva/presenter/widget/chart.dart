@@ -1,7 +1,7 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
-import 'package:kumbuz/configs/config.dart';
-import 'package:kumbuz/core/utils/utils.dart';
+import 'package:kumbuz/core/configs/config.dart';
+import 'package:kumbuz/utils/utils.dart';
 import 'package:kumbuz/features/sateva/domain/usecases/controllers/expense_controlller.dart';
 
 import '../../../../core/setup_app.dart';

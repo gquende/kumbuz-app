@@ -1,4 +1,4 @@
-import '../../../../../services/one_signal_service.dart';
+import '../../../../../core/services/one_signal_service.dart';
 
 class SendNotificationUsecase {
   late OneSignalService _service;

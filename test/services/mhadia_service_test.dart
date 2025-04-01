@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:kumbuz/services/mhadia_service.dart';
+import 'package:kumbuz/core/services/mhadia_service.dart';
 
 main() {
   MhadiaService? service;

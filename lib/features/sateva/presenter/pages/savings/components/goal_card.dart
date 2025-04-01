@@ -1,7 +1,7 @@
 import 'package:currency_formatter/currency_formatter.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
-import 'package:kumbuz/configs/theme/styles.dart';
+import 'package:kumbuz/core/configs/theme/styles.dart';
 import 'package:kumbuz/features/sateva/data/models/goals.dart';
 import 'package:kumbuz/features/sateva/domain/usecases/goals_usecases.dart';
 import 'package:provider/provider.dart';

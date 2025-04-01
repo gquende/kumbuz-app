@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:kumbuz/core/di/dependecy_injection.dart';
 import 'package:kumbuz/core/error/log/catch_error_log.dart';
 import 'package:kumbuz/core/mock_data.dart';
-import 'package:kumbuz/core/utils/datetime_manipulation.dart';
+import 'package:kumbuz/utils/datetime_manipulation.dart';
 import 'package:kumbuz/features/open_finance/domain/usecases/connect_account_usecase.dart';
 import 'package:kumbuz/features/open_finance/domain/usecases/fetch_transaction_usecase.dart';
 import 'package:kumbuz/features/open_finance/domain/usecases/get_bank_accounts.dart';
@@ -21,9 +21,9 @@ import 'package:kumbuz/shared/presentation/ui/widgets/notification_alert.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:uuid/uuid.dart';
 
-import '../../../../configs/config.dart';
-import '../../../../configs/theme/colors.dart';
-import '../../../../services/nordigen_service.dart';
+import '../../../../core/configs/config.dart';
+import '../../../../core/configs/theme/colors.dart';
+import '../../../../core/services/nordigen_service.dart';
 import '../../../sateva/data/models/expense.dart';
 import '../../domain/entity/bank_entity.dart';
 

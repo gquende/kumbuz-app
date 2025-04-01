@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kumbuz/core/utils/router.dart';
+import 'package:kumbuz/utils/router.dart';
 
 class NavigationService {
   GlobalKey<NavigatorState> _navigationKey = GlobalKey<NavigatorState>();

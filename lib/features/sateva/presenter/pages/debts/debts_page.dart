@@ -8,8 +8,8 @@ import 'package:kumbuz/features/sateva/presenter/pages/debts/controller/debt_con
 import 'package:percent_indicator/circular_percent_indicator.dart';
 import 'package:provider/provider.dart';
 
-import '../../../../../configs/theme/styles.dart';
-import '../../../../../core/utils/currency_utils.dart';
+import '../../../../../core/configs/theme/styles.dart';
+import '../../../../../utils/currency_utils.dart';
 import 'debt_details.dart';
 
 class DebtsPage extends StatefulWidget {

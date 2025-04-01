@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:flutter/cupertino.dart';
 import 'package:kumbuz/features/sateva/domain/entities/tips.dart';
 
-import '../../../../../../services/ia_api.dart';
+import '../../../../../../core/services/ia_api.dart';
 import '../widget/tips_dialog.dart';
 
 class TipsController {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:kumbuz/configs/theme/styles.dart';
+import 'package:kumbuz/core/configs/theme/styles.dart';
 
 import '../../../../helper/global.dart';
 import '../controllers/chat_controller.dart';

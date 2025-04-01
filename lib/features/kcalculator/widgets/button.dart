@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../configs/config.dart';
+import '../../../core/configs/config.dart';
 import '../provider/cal_provider.dart';
 
 class Button1 extends StatelessWidget {

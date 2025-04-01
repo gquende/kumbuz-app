@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:kumbuz/core/utils/datetime_manipulation.dart';
+import 'package:kumbuz/utils/datetime_manipulation.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/notifications/controller/notification_controller.dart';
 
-import '../../../../../../../configs/theme/styles.dart';
+import '../../../../../../../core/configs/theme/styles.dart';
 import '../../../../../../../core/di/dependecy_injection.dart';
 import '../../../../../domain/entities/notification.dart';
 import '../open_notification.dart';

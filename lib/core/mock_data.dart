@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kumbuz/core/utils/datetime_manipulation.dart';
+import 'package:kumbuz/utils/datetime_manipulation.dart';
 import 'package:kumbuz/features/sateva/data/models/category_model.dart';
 import 'package:kumbuz/features/sateva/data/models/expense.dart';
 import 'package:kumbuz/features/sateva/data/models/income.dart';

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:kumbuz/configs/theme/styles.dart';
-import 'package:kumbuz/core/utils/currency_utils.dart';
+import 'package:kumbuz/core/configs/theme/styles.dart';
+import 'package:kumbuz/utils/currency_utils.dart';
 import 'package:kumbuz/features/sateva/domain/entities/transaction_entity.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/expense/add_expense.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/income/income_form.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/transactions/controller/transaction_controller.dart';
 import 'package:provider/provider.dart';
 
-import '../../../../../core/utils/wiiget_utils.dart';
+import '../../../../../utils/wiiget_utils.dart';
 import '../../../data/models/expense.dart';
 import '../../../data/models/income.dart';
 

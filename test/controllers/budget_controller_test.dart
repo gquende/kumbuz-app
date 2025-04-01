@@ -1,12 +1,12 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:kumbuz/configs/config.dart';
+import 'package:kumbuz/core/configs/config.dart';
 
 import 'package:kumbuz/core/db/database.dart';
 
 import 'package:kumbuz/features/sateva/data/models/budget.dart';
 import 'package:kumbuz/features/sateva/domain/usecases/controllers/budget_controller.dart';
 
-import 'package:kumbuz/core/utils/datetime_manipulation.dart';
+import 'package:kumbuz/utils/datetime_manipulation.dart';
 import 'package:uuid/uuid.dart';
 
 main() {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kumbuz/configs/config.dart';
+import 'package:kumbuz/core/configs/config.dart';
 
 Container ConfirmButton(BuildContext context, String text, bool active) {
   return Container(

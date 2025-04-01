@@ -1,8 +1,8 @@
 import 'package:currency_formatter/currency_formatter.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
-import 'package:kumbuz/configs/config.dart';
-import 'package:kumbuz/configs/theme/colors.dart';
+import 'package:kumbuz/core/configs/config.dart';
+import 'package:kumbuz/core/configs/theme/colors.dart';
 import 'package:kumbuz/features/sateva/data/models/wallet.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/category/categories.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';

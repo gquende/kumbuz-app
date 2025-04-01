@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:kumbuz/configs/theme/styles.dart';
+import 'package:kumbuz/core/configs/theme/styles.dart';
 import 'package:kumbuz/core/di/dependecy_injection.dart';
-import 'package:kumbuz/core/utils/currency_utils.dart';
-import 'package:kumbuz/core/utils/datetime_manipulation.dart';
+import 'package:kumbuz/utils/currency_utils.dart';
+import 'package:kumbuz/utils/datetime_manipulation.dart';
 import 'package:kumbuz/features/sateva/domain/entities/kixikila/kixikila.dart';
 import 'package:kumbuz/features/sateva/domain/entities/kixikila/kixikila_guest.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/kixikila/controller/kixikila_controller.dart';

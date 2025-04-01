@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:kumbuz/core/utils/currency_utils.dart';
+import 'package:kumbuz/utils/currency_utils.dart';
 import 'package:kumbuz/features/sateva/domain/entities/kixikila/kixikila.dart';
 
-import '../../../../../../../configs/theme/styles.dart';
+import '../../../../../../../core/configs/theme/styles.dart';
 
 class KixikilaHeadDetails extends StatelessWidget {
   Kixikila kixikila;

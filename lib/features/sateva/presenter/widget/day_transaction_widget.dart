@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:kumbuz/features/sateva/domain/entities/transaction_entity.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/transactions/transaction_details.dart';
 
-import '../../../../core/utils/wiiget_utils.dart';
+import '../../../../utils/wiiget_utils.dart';
 
 class DayTransactionWidget extends StatelessWidget {
   // const DayTransactionWidget({Key? key}) : super(key: key);

@@ -1,9 +1,9 @@
 import 'package:date_format/date_format.dart';
 import 'package:flutter/material.dart';
-import 'package:kumbuz/configs/config.dart';
-import 'package:kumbuz/core/utils/datetime_manipulation.dart';
+import 'package:kumbuz/core/configs/config.dart';
+import 'package:kumbuz/utils/datetime_manipulation.dart';
 import 'package:kumbuz/features/sateva/data/models/budget.dart';
-import 'package:kumbuz/services/mhadia_service.dart';
+import 'package:kumbuz/core/services/mhadia_service.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../data/models/expense.dart';

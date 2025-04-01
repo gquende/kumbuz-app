@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:kumbuz/configs/config.dart';
+import 'package:kumbuz/core/configs/config.dart';
 
 import 'auth/sign_up.dart';
 

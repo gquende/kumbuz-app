@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kumbuz/configs/theme/styles.dart';
+import 'package:kumbuz/core/configs/theme/styles.dart';
 import 'package:kumbuz/core/di/dependecy_injection.dart';
 import 'package:kumbuz/features/open_finance/domain/usecases/get_bank_account_by_name.dart';
 import 'package:kumbuz/features/sateva/data/models/wallet.dart';

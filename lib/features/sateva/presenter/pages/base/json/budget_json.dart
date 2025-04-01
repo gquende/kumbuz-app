@@ -1,4 +1,4 @@
-import 'package:kumbuz/configs/theme/colors.dart';
+import 'package:kumbuz/core/configs/theme/colors.dart';
 
 const List budget_json = [
   {

@@ -3,7 +3,7 @@ import 'package:kumbuz/features/sateva/data/models/category_model.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/base/pages/root_app.dart';
 import 'package:kumbuz/features/sateva/presenter/widget/day_transaction_with_category.dart';
 
-import '../../../configs/config.dart';
+import '../../../core/configs/config.dart';
 import '../../../core/setup_app.dart';
 import 'controllers/bank_controller.dart';
 

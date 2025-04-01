@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:kumbuz/configs/config.dart';
+import 'package:kumbuz/core/configs/config.dart';
 import 'package:kumbuz/features/sateva/presenter/viewmodels/startup_view_model.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
 // import 'stack';
 import 'package:stacked/stacked.dart';
 
-import '../../../../../configs/environments/environments.dart';
+import '../../../../../core/configs/environments/environments.dart';
 
 class StartView extends StatelessWidget {
   const StartView({Key? key}) : super(key: key);

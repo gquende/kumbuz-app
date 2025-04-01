@@ -2,8 +2,8 @@
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
-import 'package:kumbuz/configs/config.dart';
-import 'package:kumbuz/configs/theme/colors.dart';
+import 'package:kumbuz/core/configs/config.dart';
+import 'package:kumbuz/core/configs/theme/colors.dart';
 import 'package:kumbuz/features/open_finance/presenter/add_bank_account.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/debts/add_debt.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/predict_budget.dart';

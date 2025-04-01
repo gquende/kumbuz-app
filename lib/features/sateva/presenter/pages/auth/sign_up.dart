@@ -1,13 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:kumbuz/configs/config.dart';
+import 'package:kumbuz/core/configs/config.dart';
 import 'package:kumbuz/features/sateva/data/models/user.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/auth/controller/auth_controller.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/newhome/presentation/newhome.dart';
 
 import '../../../../../app.dart';
-import '../../../../../core/utils/strings_utils.dart';
+import '../../../../../utils/strings_utils.dart';
 import 'login.dart';
 
 class SignUp extends StatefulWidget {

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:iconify_flutter/iconify_flutter.dart';
 import 'package:iconify_flutter/icons/game_icons.dart';
-import 'package:kumbuz/configs/theme/styles.dart';
+import 'package:kumbuz/core/configs/theme/styles.dart';
 import 'package:kumbuz/features/sateva/data/models/debt.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/debts/debt_details.dart';
 
-import '../../../../core/utils/currency_utils.dart';
+import '../../../../utils/currency_utils.dart';
 
 class DebtCard extends StatefulWidget {
   Debt debt;

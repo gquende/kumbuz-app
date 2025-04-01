@@ -1,8 +1,8 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:kumbuz/configs/config.dart';
-import 'package:kumbuz/configs/theme/styles.dart';
+import 'package:kumbuz/core/configs/config.dart';
+import 'package:kumbuz/core/configs/theme/styles.dart';
 import 'package:kumbuz/core/setup_app.dart';
 
 import '../domain/entity/bank_entity.dart';
