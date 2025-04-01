@@ -59,12 +59,19 @@ dependencies:
   multiple_search_selection: ^2.7.1
   dropdown_model_list: ^2.1.5
   function_tree: ^0.9.1
+  injectable: ^2.5.0
+  #dev: ^1.0.0
+  #injectable_generator: ^2.7.0
+  #injectable_generator: ^2.7.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
   flutter_lints: ^3.0.0
+  # add build runner if not already added
+  injectable_generator: ^2.7.0
+  build_runner:
 
 flutter:
 

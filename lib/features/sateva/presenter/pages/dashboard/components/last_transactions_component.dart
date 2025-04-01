@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kumbuz/configs/assets.dart';
+import 'package:kumbuz/core/configs/assets.dart';
 import 'package:kumbuz/features/sateva/domain/usecases/controllers/expense_controlller.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/transactions/controller/transaction_controller.dart';
 import 'package:provider/provider.dart';

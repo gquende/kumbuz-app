@@ -1,5 +1,8 @@
+import 'package:injectable/injectable.dart';
 import 'package:kumbuz/core/db/database.dart';
 
+
+@Injectable()
 class CheckBudgetProgressUsecasse {
   AppDatabase _database;
 

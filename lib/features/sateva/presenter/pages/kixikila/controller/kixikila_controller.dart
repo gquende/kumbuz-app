@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:kumbuz/core/di/dependecy_injection.dart';
 import 'package:kumbuz/core/error/log/catch_error_log.dart';
-import 'package:kumbuz/core/utils/strings_utils.dart';
+import 'package:kumbuz/utils/strings_utils.dart';
 import 'package:kumbuz/features/sateva/domain/entities/kixikila/kixikila.dart';
 import 'package:kumbuz/features/sateva/domain/entities/kixikila/kixikila_guest.dart';
 import 'package:kumbuz/features/sateva/domain/entities/kixikila/kixikila_payment.dart';

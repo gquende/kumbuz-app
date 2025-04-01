@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:kumbuz/configs/config.dart';
-import 'package:kumbuz/configs/theme/colors.dart';
+import 'package:kumbuz/core/configs/config.dart';
+import 'package:kumbuz/core/configs/theme/colors.dart';
 import 'package:kumbuz/core/setup_app.dart';
 import 'package:kumbuz/core/singletons/globals.dart';
 import 'package:kumbuz/features/sateva/domain/entities/category.dart';
@@ -13,7 +13,7 @@ import 'package:provider/provider.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart'; // import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 import 'package:table_calendar/table_calendar.dart';
 
-import '../../../../../../core/utils/datetime_manipulation.dart';
+import '../../../../../../utils/datetime_manipulation.dart';
 import '../../income/controller/income_controller.dart';
 
 class StatsPage extends StatefulWidget {

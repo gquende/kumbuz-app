@@ -23,7 +23,7 @@ import 'package:kumbuz/features/sateva/presenter/pages/auth/controller/auth_cont
 import 'package:kumbuz/features/sateva/presenter/pages/kixikila/controller/kixikila_controller.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/notifications/controller/notification_controller.dart';
 
-import '../../configs/config.dart';
+import '../configs/config.dart';
 import '../../features/open_finance/data/repositories/bank_repository.dart';
 import '../../features/open_finance/domain/usecases/get_bank_account_by_name.dart';
 import '../../features/open_finance/presenter/controllers/bank_controller.dart';
@@ -67,12 +67,14 @@ import '../../features/sateva/domain/usecases/user_usecases/user_update_usecase.
 import '../../features/sateva/domain/usecases/wallet_usecases/get_wallet_by_type.dart';
 import '../../features/sateva/presenter/pages/tips/controller/tips_controller.dart';
 import '../../features/sateva/presenter/pages/transactions/controller/transaction_controller.dart';
-import '../../services/dynamic_link_service.dart';
-import '../../services/firebase_messagin_service.dart';
-import '../../services/nordigen_service.dart';
-import '../../services/notification_service.dart';
-import '../../services/one_signal_service.dart';
-import '../utils/navigation_service.dart';
+import '../services/dynamic_link_service.dart';
+import '../services/firebase_messagin_service.dart';
+import '../services/nordigen_service.dart';
+import '../services/notification_service.dart';
+import '../services/one_signal_service.dart';
+import '../../utils/navigation_service.dart';
+
+final getIt = GetIt.instance;
 
 final class DependencyInjection {
   static DependencyInjection? _instance;
@@ -88,7 +90,7 @@ final class DependencyInjection {
 
   Future<void> setup() async {
     // await Firebase.initializeApp();
-    var getIt = GetIt.instance;
+
     await dotenv.load();
 
     getIt.registerLazySingleton(() => ExpenseController());

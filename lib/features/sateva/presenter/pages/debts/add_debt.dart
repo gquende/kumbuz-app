@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:kumbuz/configs/config.dart';
-import 'package:kumbuz/core/utils/datetime_manipulation.dart';
+import 'package:kumbuz/core/configs/config.dart';
+import 'package:kumbuz/utils/datetime_manipulation.dart';
 import 'package:kumbuz/features/sateva/data/models/debt.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/debts/controller/debt_controller_2.dart';
 import 'package:provider/provider.dart';

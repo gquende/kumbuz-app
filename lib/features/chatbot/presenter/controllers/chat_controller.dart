@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 
 import '../../../../app.dart';
 import '../../../../helper/my_dialog.dart';
-import '../../../../services/ia_api.dart';
+import '../../../../core/services/ia_api.dart';
 import '../../domain/entitites/message.dart';
 
 class ChatController extends GetxController {

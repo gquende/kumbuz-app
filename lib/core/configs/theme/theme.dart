@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:kumbuz/configs/theme/text_button_theme.dart';
-import 'package:kumbuz/configs/theme/text_theme.dart';
-import 'package:kumbuz/configs/theme/textfield_theme.dart';
+import 'package:kumbuz/core/configs/theme/text_button_theme.dart';
+import 'package:kumbuz/core/configs/theme/text_theme.dart';
+import 'package:kumbuz/core/configs/theme/textfield_theme.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'app_bar_theme.dart';

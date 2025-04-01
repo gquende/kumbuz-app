@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:kumbuz/configs/theme/styles.dart';
-import 'package:kumbuz/core/utils/datetime_manipulation.dart';
+import 'package:kumbuz/core/configs/theme/styles.dart';
+import 'package:kumbuz/utils/datetime_manipulation.dart';
 import 'package:kumbuz/features/sateva/domain/entities/kixikila/kixikila_payment.dart';
 
-import '../../../../../../../core/utils/currency_utils.dart';
+import '../../../../../../../utils/currency_utils.dart';
 
 class KixiPaymentComponent extends StatelessWidget {
   KixikilaPayment payment;

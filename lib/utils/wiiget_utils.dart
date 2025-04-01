@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../configs/config.dart';
+import '../core/configs/config.dart';
 
 setIcon(String type) {
   switch (type) {

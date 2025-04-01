@@ -4,7 +4,7 @@ import 'package:kumbuz/features/sateva/presenter/pages/mock_widgets.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/newhome/presentation/newhome.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/onboarding.dart';
 
-import '../../features/sateva/presenter/pages/auth/sign_up.dart';
+import '../features/sateva/presenter/pages/auth/sign_up.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {

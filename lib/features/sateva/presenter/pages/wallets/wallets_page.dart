@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kumbuz/configs/assets.dart';
+import 'package:kumbuz/core/configs/assets.dart';
 import 'package:kumbuz/features/open_finance/presenter/add_bank_account.dart';
 import 'package:kumbuz/features/open_finance/presenter/controllers/bank_controller.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/wallets/widgets/wallet_card.dart';

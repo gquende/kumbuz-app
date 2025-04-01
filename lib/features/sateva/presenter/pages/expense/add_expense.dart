@@ -1,6 +1,6 @@
 import 'package:date_format/date_format.dart';
 import 'package:flutter/material.dart';
-import 'package:kumbuz/configs/config.dart';
+import 'package:kumbuz/core/configs/config.dart';
 import 'package:kumbuz/features/sateva/data/models/expense.dart';
 import 'package:kumbuz/features/sateva/domain/entities/transaction_entity.dart';
 import 'package:kumbuz/features/sateva/domain/usecases/controllers/expense_controlller.dart';
@@ -61,7 +61,6 @@ class _AddExpenseState extends State<AddExpense> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Nova Despesa"),
-        backgroundColor: Colors.redAccent,
         centerTitle: true,
       ),
       body: GestureDetector(

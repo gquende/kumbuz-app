@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
-import 'package:kumbuz/configs/assets.dart';
+import 'package:kumbuz/core/configs/assets.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/notifications/view/widgets/notification_card.dart';
 
 import '../../../../../../core/di/dependecy_injection.dart';

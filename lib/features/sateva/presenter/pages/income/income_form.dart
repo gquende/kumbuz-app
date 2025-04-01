@@ -1,6 +1,6 @@
 import 'package:date_format/date_format.dart';
 import 'package:flutter/material.dart';
-import 'package:kumbuz/configs/config.dart';
+import 'package:kumbuz/core/configs/config.dart';
 import 'package:kumbuz/core/singletons/globals.dart';
 import 'package:kumbuz/features/kcalculator/presenter/kcalculator.dart';
 import 'package:kumbuz/features/sateva/data/models/income.dart';
@@ -65,7 +65,6 @@ class _IncomeFormState extends State<IncomeForm> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Registar receita"),
-        backgroundColor: AppColors.primaryColor,
         centerTitle: true,
       ),
       body: GestureDetector(

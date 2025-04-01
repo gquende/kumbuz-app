@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:kumbuz/configs/theme/colors.dart';
+import 'package:kumbuz/core/configs/theme/colors.dart';
 import 'package:kumbuz/features/sateva/domain/entities/user_entity.dart';
 import 'package:kumbuz/shared/presentation/ui/spacing.dart';
 import 'package:multiple_search_selection/multiple_search_selection.dart';

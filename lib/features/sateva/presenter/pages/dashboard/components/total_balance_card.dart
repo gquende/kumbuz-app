@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:kumbuz/mocks/month_mocks.dart';
 import 'package:provider/provider.dart';
 
-import '../../../../../../core/utils/currency_utils.dart';
-import '../../../../../../core/utils/datetime_manipulation.dart';
+import '../../../../../../utils/currency_utils.dart';
+import '../../../../../../utils/datetime_manipulation.dart';
 import '../../../../domain/usecases/controllers/expense_controlller.dart';
 import '../../../../domain/usecases/controllers/wallet_ controller.dart';
 import '../../income/controller/income_controller.dart';

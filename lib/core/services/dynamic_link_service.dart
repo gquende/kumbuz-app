@@ -1,7 +1,7 @@
 import 'package:firebase_dynamic_links/firebase_dynamic_links.dart';
 import 'package:kumbuz/core/setup_app.dart';
-import 'package:kumbuz/core/utils/navigation_service.dart';
-import 'package:kumbuz/core/utils/router.dart';
+import 'package:kumbuz/utils/navigation_service.dart';
+import 'package:kumbuz/utils/router.dart';
 
 class DynamicLinkService {
   final NavigationService _navigationService = locator<NavigationService>();

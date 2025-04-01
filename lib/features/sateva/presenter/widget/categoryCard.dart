@@ -1,7 +1,7 @@
 import 'package:currency_formatter/currency_formatter.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
-import 'package:kumbuz/configs/config.dart';
+import 'package:kumbuz/core/configs/config.dart';
 import 'package:kumbuz/features/sateva/domain/entities/category.dart';
 
 class CategoryCard extends StatelessWidget {

@@ -4,7 +4,7 @@ import 'package:kumbuz/features/open_finance/presenter/bank_transactions_loading
 
 import '../../../app.dart';
 import '../../../core/setup_app.dart';
-import '../../../core/utils/navigation_service.dart';
+import '../../../utils/navigation_service.dart';
 import '../domain/entity/bank_entity.dart';
 import 'controllers/bank_controller.dart';
 

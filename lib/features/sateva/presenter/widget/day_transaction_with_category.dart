@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:kumbuz/core/mock_data.dart';
 import 'package:kumbuz/features/sateva/domain/entities/category.dart';
 
-import '../../../../configs/config.dart';
+import '../../../../core/configs/config.dart';
 import '../../data/models/wallet_transaction.dart';
 
 class DayTransactionWithCategory extends StatefulWidget {

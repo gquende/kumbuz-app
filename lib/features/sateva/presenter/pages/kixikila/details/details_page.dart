@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:kumbuz/configs/theme/styles.dart';
+import 'package:kumbuz/core/configs/theme/styles.dart';
 import 'package:kumbuz/features/sateva/domain/entities/kixikila/kixikila.dart';
 import 'package:kumbuz/features/sateva/domain/entities/kixikila/kixikila_guest.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/kixikila/details/components/guest_details.dart';
 
 import '../../../../../../core/di/dependecy_injection.dart';
-import '../../../../../../core/utils/currency_utils.dart';
-import '../../../../../../core/utils/datetime_manipulation.dart';
+import '../../../../../../utils/currency_utils.dart';
+import '../../../../../../utils/datetime_manipulation.dart';
 import '../controller/kixikila_controller.dart';
 import '../payments/payments_history.dart';
 

@@ -8,7 +8,7 @@ import 'package:kumbuz/features/sateva/presenter/pages/category/controllers/cate
 import 'package:uuid/uuid.dart';
 
 import '../../../../../app.dart';
-import '../../../../../configs/config.dart';
+import '../../../../../core/configs/config.dart';
 import '../../../../../shared/presentation/ui/spacing.dart';
 
 class CategoriesPage extends StatefulWidget {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kumbuz/core/di/dependecy_injection.dart';
-import 'package:kumbuz/core/utils/loading_screen.dart';
+import 'package:kumbuz/utils/loading_screen.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/auth/controller/auth_controller.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/auth/login.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/category/categories.dart';

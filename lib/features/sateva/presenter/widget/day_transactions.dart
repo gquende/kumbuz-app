@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:kumbuz/configs/config.dart';
-import 'package:kumbuz/core/utils/datetime_manipulation.dart';
+import 'package:kumbuz/core/configs/config.dart';
+import 'package:kumbuz/utils/datetime_manipulation.dart';
 import 'package:kumbuz/features/sateva/data/models/wallet_transaction.dart';
 
 import 'day_transaction_widget.dart';

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kumbuz/configs/config.dart';
+import 'package:kumbuz/core/configs/config.dart';
 
 Color PRIMARY_COLOR = AppColors.primaryColor;
 const Color secondary = Color(0xFF000000);

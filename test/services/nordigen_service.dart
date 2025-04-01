@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:kumbuz/services/nordigen_service.dart';
+import 'package:kumbuz/core/services/nordigen_service.dart';
 
 void main() {
   NordigenClient? client;

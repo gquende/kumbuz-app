@@ -5,7 +5,7 @@ import 'package:kumbuz/features/sateva/data/models/wallet_transaction.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/transactions/controller/transaction_controller.dart';
 import 'package:kumbuz/shared/presentation/ui/widgets/notification_icon.dart';
 
-import '../../../../../configs/assets.dart';
+import '../../../../../core/configs/assets.dart';
 import '../../widget/day_transaction_widget.dart';
 
 class TransactionsPage extends StatefulWidget {

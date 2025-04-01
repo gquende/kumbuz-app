@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:kumbuz/configs/config.dart';
-import 'package:kumbuz/configs/environments/environments.dart';
-import 'package:kumbuz/configs/theme/colors.dart';
-import 'package:kumbuz/configs/theme/styles.dart';
-import 'package:kumbuz/core/utils/datetime_manipulation.dart';
+import 'package:kumbuz/core/configs/config.dart';
+import 'package:kumbuz/core/configs/environments/environments.dart';
+import 'package:kumbuz/core/configs/theme/colors.dart';
+import 'package:kumbuz/core/configs/theme/styles.dart';
+import 'package:kumbuz/utils/datetime_manipulation.dart';
 import 'package:kumbuz/features/sateva/domain/entities/tips.dart';
 import 'package:kumbuz/features/sateva/domain/usecases/expense_usecase/add_expense_usecase.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/tips/controller/tips_controller.dart';
@@ -13,9 +13,9 @@ import 'package:kumbuz/features/sateva/presenter/pages/transactions/transactions
 import 'package:provider/provider.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
-import '../../../../../configs/assets.dart';
+import '../../../../../core/configs/assets.dart';
 import '../../../../../core/di/dependecy_injection.dart';
-import '../../../../../core/utils/currency_utils.dart';
+import '../../../../../utils/currency_utils.dart';
 import '../../../../../shared/presentation/ui/spacing.dart';
 import '../../../data/models/wallet_transaction.dart';
 import '../../../domain/usecases/controllers/wallet_ controller.dart';

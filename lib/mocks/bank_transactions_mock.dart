@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:kumbuz/features/sateva/domain/entities/bank_transaction.dart';
 import 'package:uuid/uuid.dart';
 
-import '../core/utils/datetime_manipulation.dart';
+import '../utils/datetime_manipulation.dart';
 
 // var bankTransactionMock = [
 //   WalletTransaction(

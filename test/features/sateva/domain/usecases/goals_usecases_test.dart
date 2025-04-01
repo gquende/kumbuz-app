@@ -4,7 +4,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:kumbuz/core/db/database.dart';
 import 'package:kumbuz/features/sateva/data/models/goals.dart';
 import 'package:kumbuz/features/sateva/domain/usecases/goals_usecases.dart';
-import 'package:kumbuz/core/utils/datetime_manipulation.dart';
+import 'package:kumbuz/utils/datetime_manipulation.dart';
 import 'package:uuid/uuid.dart';
 
 void main() {

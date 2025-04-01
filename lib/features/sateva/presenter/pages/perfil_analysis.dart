@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:group_radio_button/group_radio_button.dart';
-import 'package:kumbuz/configs/config.dart';
+import 'package:kumbuz/core/configs/config.dart';
 import 'package:kumbuz/features/sateva/data/models/question.dart';
 import 'package:kumbuz/features/sateva/presenter/pages/auth/controller/auth_controller.dart';
 import 'package:kumbuz/features/sateva/presenter/widget/button.dart';
@@ -9,7 +9,7 @@ import 'package:lottie/lottie.dart';
 // import 'package:kumbuz/services/mhadia_service.dart';
 
 import '../../../../app.dart';
-import '../../../../services/mhadia_service.dart';
+import '../../../../core/services/mhadia_service.dart';
 import 'base/pages/root_app.dart';
 
 class PerfilAnalysis extends StatefulWidget {

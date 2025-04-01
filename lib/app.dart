@@ -5,12 +5,12 @@ import 'package:kumbuz/features/sateva/presenter/pages/transactions/controller/t
 import 'package:kumbuz/l10n/l10n.dart';
 import 'package:provider/provider.dart';
 
-import 'configs/config.dart';
-import 'configs/theme/theme.dart';
+import 'core/configs/config.dart';
+import 'core/configs/theme/theme.dart';
 import 'core/di/dependecy_injection.dart';
 import 'core/setup_app.dart';
-import 'core/utils/navigation_service.dart';
-import 'core/utils/router.dart';
+import 'utils/navigation_service.dart';
+import 'utils/router.dart';
 import 'features/kcalculator/provider/cal_provider.dart';
 import 'features/sateva/data/models/user.dart';
 import 'features/sateva/data/models/wallet.dart';
